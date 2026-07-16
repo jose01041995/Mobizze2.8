@@ -12,11 +12,15 @@
     
     <script>
         (function() {
-            // Get user's preferred language
-            var lang = navigator.language || navigator.userLanguage;
-            // Determine the target URL
-            var targetUrl = lang.toLowerCase().startsWith('pt') ? 'pt/index.html' : 'en/index.html';
-            // Redirect to the appropriate version
+            var languages = navigator.languages && navigator.languages.length
+                ? navigator.languages
+                : [navigator.language || navigator.userLanguage || 'en'];
+
+            var isPortuguese = languages.some(function(language) {
+                return String(language).toLowerCase().indexOf('pt') === 0;
+            });
+
+            var targetUrl = isPortuguese ? 'pt/' : 'en/';
             window.location.replace(targetUrl);
         })();
     </script>
