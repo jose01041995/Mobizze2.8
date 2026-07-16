@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financiamento para Projetos de IA | AbsolutAI</title>
+    <meta name="description" content="Aceda a financiamento para o seu projeto de automação com IA. Comece a transformar a sua empresa hoje, com pagamentos flexíveis. Saiba mais na AbsolutAI.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Space Grotesk', 'system-ui', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+                    },
+                    colors: {
+                        accent: '#2563eb', // Blue-600
+                        'accent-light': '#eff6ff',
+                        'accent-border': '#bfdbfe',
+                        base: '#ffffff',
+                        dark: '#0f172a',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #f8fafc; color: #0f172a; } /* Light gray background */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+    </style>
+</head>
+<body class="font-sans antialiased bg-base text-dark">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
+        <div class="flex items-center justify-between h-12">
+            <a href="index.html" aria-label="AbsolutAI — Home" class="font-display font-bold text-lg tracking-tight text-dark">
+                Absolut<span class="text-accent">AI</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 h-full">
+                <!-- Dropdown Serviços -->
+                <div class="relative group flex items-center h-full">
+                    <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Serviços <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
+                            <a href="index.html#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Chatbot</a>
+                            <a href="index.html#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbot</a>
+                            <a href="index.html#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Qualificar Leads CRM</a>
+                            <a href="index.html#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agendar Reuniões</a>
+                            <a href="index.html#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Voz</a>
+                            <a href="index.html#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Texto</a>
+                            <a href="index.html#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Redes Sociais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown Setores -->
+                <div class="relative group flex items-center h-full">
+                    <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Setores <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-48 z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
+                            <a href="index.html#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Clínicas & Saúde</a>
+                            <a href="index.html#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Imobiliárias</a>
+                            <a href="index.html#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">E-commerce</a>
+                            <a href="index.html#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Restaurantes</a>
+                            <a href="index.html#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Salões & Estética</a>
+                            <div class="h-px bg-slate-100 my-1 mx-2"></div>
+                            <a href="index.html#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors">Ver todos os setores &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="sobre.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Sobre Nós</a>
+                <a href="financiamento.html" class="text-xs font-medium text-accent transition-colors duration-300 tracking-wide">Financiamento</a>
+                <a href="index.html#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
+            </div>
+            <a href="contacto.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-accent text-white hover:bg-blue-700 shadow-sm hover:shadow-md">Falar connosco</a>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-600 focus:outline-none" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Fullscreen -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
+        <div class="flex items-center justify-between p-6 pb-4 border-b border-slate-100">
+            <a href="index.html" aria-label="AbsolutAI — Home" class="font-display font-bold text-xl tracking-tight text-dark">
+                Absolut<span class="text-accent">AI</span>
+            </a>
+            <button id="close-mobile-menu" class="text-slate-600 focus:outline-none p-2 -mr-2 hover:bg-slate-50 rounded-full transition-colors" aria-label="Fechar Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+        <div class="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8">
+            <div>
+                <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Serviços</div>
+                <div class="flex flex-col gap-4">
+                    <a href="index.html#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Chatbot</a>
+                    <a href="index.html#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Emailbot</a>
+                    <a href="index.html#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Qualificar CRM</a>
+                    <a href="index.html#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agendar Reuniões</a>
+                    <a href="index.html#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Voz</a>
+                    <a href="index.html#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Redes Sociais</a>
+                </div>
+            </div>
+            <div class="h-px w-full bg-slate-100"></div>
+            <div class="flex flex-col gap-5">
+                <a href="index.html#setores" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Setores</a>
+                <a href="sobre.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Sobre Nós</a>
+                <a href="financiamento.html" class="mobile-link text-xl font-display font-bold text-accent">Financiamento</a>
+                <a href="index.html#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
+            </div>
+            <div class="mt-auto pt-6">
+                <a href="contacto.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-accent text-white hover:bg-blue-700 text-center shadow-md">Falar connosco</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative w-full overflow-hidden bg-white pt-32 pb-20 md:pt-40 md:pb-28">
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none" style="background: radial-gradient(ellipse 80% 100% at 50% -20%, rgba(239, 246, 255, 0.8) 0%, rgba(255,255,255,0) 100%);"></div>
+            
+            <div class="max-w-4xl mx-auto px-6 w-full relative z-10">
+              
+                <div class="text-center">
+                    <h1 class="text-xs font-mono tracking-[0.2em] uppercase mb-4 text-accent animate-fade-in-up">Financiamento Flexível</h1>
+                    <h2 class="font-display font-bold text-dark leading-[1.1] tracking-tight mb-6 animate-fade-in-up delay-100" style="font-size: clamp(2.5rem, 5vw, 4rem);">
+                        Financie a Sua <span class="text-accent">Transformação Digital</span>.
+                    </h2>
+                    <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto animate-fade-in-up delay-200">
+                        A falta de orçamento já não é um obstáculo. Com o nosso programa de financiamento, pode começar a implementar a IA na sua empresa hoje e pagar de forma flexível.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works Section -->
+        <section class="relative px-6 py-24 bg-slate-50 border-y border-slate-200">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-display font-bold text-dark tracking-tight text-center mb-16 reveal">Como Funciona</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center reveal">
+                        <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-display font-bold mb-4">1</div>
+                        <h3 class="text-lg font-display font-bold text-dark mb-2">Diagnóstico Gratuito</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Começamos com uma análise completa para entender as suas necessidades e o potencial de ROI.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center reveal delay-100">
+                        <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-display font-bold mb-4">2</div>
+                        <h3 class="text-lg font-display font-bold text-dark mb-2">Plano de Financiamento</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Apresentamos uma proposta de projeto com um plano de pagamento flexível e adaptado a si.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center reveal delay-200">
+                        <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-display font-bold mb-4">3</div>
+                        <h3 class="text-lg font-display font-bold text-dark mb-2">Aprovação Rápida</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">O nosso processo é simples e rápido, sem burocracias complexas. A aprovação é feita em poucos dias.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="flex flex-col items-center reveal delay-300">
+                        <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-display font-bold mb-4">4</div>
+                        <h3 class="text-lg font-display font-bold text-dark mb-2">Início Imediato</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Após a aprovação, a nossa equipa começa imediatamente a desenvolver e a implementar a sua solução de IA.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="relative px-6 py-24 bg-white">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-display font-bold text-dark tracking-tight text-center mb-16 reveal">Vantagens do Financiamento</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Benefit 1 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal">
+                        <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-lg">Início Imediato</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Não adie a inovação. Comece a colher os benefícios da IA agora mesmo, sem um grande investimento inicial.</p>
+                    </div>
+                    <!-- Benefit 2 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-100">
+                        <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-lg">Pagamentos Flexíveis</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Estruturamos um plano de pagamento mensal ou trimestral que se alinha com o seu fluxo de caixa.</p>
+                    </div>
+                    <!-- Benefit 3 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-200">
+                        <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-lg">ROI Acelerado</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">O aumento de produtividade e a redução de custos gerados pela IA ajudam a cobrir o próprio investimento.</p>
+                    </div>
+                    <!-- Benefit 4 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-300">
+                        <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-lg">Processo Simplificado</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Tratamos de tudo. O processo de candidatura é integrado na nossa proposta, sem papelada extra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="relative px-6 py-24 bg-dark">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <h2 class="font-display font-bold text-white" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.1;">
+                    Pronto para Começar?
+                </h2>
+                <p class="max-w-xl mx-auto mt-6 text-lg text-slate-300 leading-relaxed">
+                    Agende o seu diagnóstico gratuito e descubra como o nosso plano de financiamento pode viabilizar o seu projeto de IA.
+                </p>
+                <div class="mt-10">
+                    <a href="contacto.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-bold transition-all duration-300 bg-accent text-white shadow-lg shadow-blue-500/30 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/40">
+                        Pedir Diagnóstico e Plano de Financiamento
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative border-t border-slate-200 bg-white overflow-hidden">
+        <div class="relative max-w-6xl mx-auto px-6 pt-16 pb-8">
+            <div class="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8 mb-12">
+                <div class="col-span-2 md:col-span-4">
+                    <div class="font-display font-bold text-xl tracking-tight text-dark mb-4">
+                        Absolut<span class="text-accent">AI</span>
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6 max-w-xs font-medium">
+                        Agência de Inteligência Artificial para empresas. Operamos em Portugal e no mundo, criando automações que trazem resultados.
+                    </p>
+                </div>
+                <div class="col-span-1 md:col-span-2 md:col-start-7">
+                    <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navegação</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html#servicos" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Serviços</a></li>
+                        <li><a href="sobre.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Sobre Nós</a></li>
+                        <li><a href="financiamento.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Financiamento</a></li>
+                        <li><a href="index.html#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-2 md:col-span-3 md:col-start-10">
+                    <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Contacto</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <span class="text-sm text-slate-500 font-medium flex items-start gap-2">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent mt-0.5"><path d="M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                Portugal · Mundo
+                            </span>
+                        </li>
+                        <li>
+                            <a href="mailto:contato@absolutai.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                contato@absolutai.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <p class="text-xs text-slate-400 font-medium">&copy; 2026 <span class="font-display font-bold text-slate-600">AbsolutAI</span>. Todos os direitos reservados.</p>
+                <div class="flex items-center gap-4">
+                    <a href="privacidade.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Privacidade</a>
+                    <a href="termos.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Termos</a>
+                    <div class="h-4 w-px bg-slate-200"></div>
+                    <div class="flex items-center gap-2 text-xs font-bold">
+                        <a href="financiamento.html" class="text-accent">PT</a>
+                        <span class="text-slate-300">|</span>
+                        <a href="../en/financing.html" class="text-slate-400 hover:text-accent transition-colors">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const closeMobileMenuBtn = document.getElementById('close-mobile-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            if(mobileMenuBtn && mobileMenu && closeMobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
+                closeMobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
+                });
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -10% 0px',
+                threshold: 0.1
+            };
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence Agency in Portugal and Worldwide | AbsolutAI</title>
+    <meta name="description" content="Artificial intelligence agency. We create AI agents, automate processes, and give back up to 70% of your team's time. Free diagnosis.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Space Grotesk', 'system-ui', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+                    },
+                    colors: {
+                        accent: '#2563eb', // Blue-600
+                        'accent-light': '#eff6ff',
+                        'accent-border': '#bfdbfe',
+                        base: '#ffffff',
+                        dark: '#0f172a',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #ffffff; color: #0f172a; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+
+        .service-row:hover { background-color: #f8fafc; }
+        .sector-card:hover { border-color: #93c5fd; background-color: #eff6ff; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08); }
+        details > summary::-webkit-details-marker { display: none; }
+        
+        .network-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background-image: 
+                linear-gradient(to right, rgba(37, 99, 235, 0.08) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(37, 99, 235, 0.08) 1px, transparent 1px);
+            background-size: 50px 50px;
+            mask-image: radial-gradient(circle at center, black 10%, transparent 80%);
+            -webkit-mask-image: radial-gradient(circle at center, black 10%, transparent 80%);
+            animation: moveGrid 15s linear infinite;
+            transform: rotate(5deg) scale(1.5);
+        }
+
+        .network-glow {
+            position: absolute;
+            width: 150vw;
+            height: 150vh;
+            top: -25vh;
+            left: -25vw;
+            background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.15), transparent 60%);
+            z-index: 0;
+            animation: pulseGlow 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes moveGrid {
+            from { background-position: 0 0; }
+            to { background-position: 50px 50px; }
+        }
+
+        @keyframes pulseGlow {
+            0% { opacity: 0.5; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1.1); }
+        }
+
+        @keyframes scroll-tools {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+        .animate-scroll-tools {
+            animation: scroll-tools 80s linear infinite;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-base text-dark">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
+        <div class="flex items-center justify-between h-12">
+            <a href="#" aria-label="AbsolutAI — Home" class="font-display font-bold text-lg tracking-tight text-dark">
+                Absolut<span class="text-accent">AI</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 h-full">
+                <!-- Dropdown Services -->
+                <div class="relative group flex items-center h-full">
+                    <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Services <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <!-- Invisible Hitbox and Menu -->
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
+                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Chatbot</a>
+                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbot</a>
+                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Qualify Leads CRM</a>
+                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Schedule Meetings</a>
+                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Voice Agents</a>
+                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Text Agents</a>
+                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Social Media</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown Sectors -->
+                <div class="relative group flex items-center h-full">
+                    <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Sectors <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <!-- Invisible Hitbox and Menu -->
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-48 z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
+                            <a href="#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Clinics & Health</a>
+                            <a href="#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Real Estate</a>
+                            <a href="#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">E-commerce</a>
+                            <a href="#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Restaurants</a>
+                            <a href="#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Salons & Aesthetics</a>
+                            <div class="h-px bg-slate-100 my-1 mx-2"></div>
+                            <a href="#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors">View all sectors &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="about.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">About Us</a>
+                <a href="financing.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Financing</a>
+                <a href="#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
+            </div>
+            
+            <a href="contact.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-accent text-white hover:bg-blue-700 shadow-sm hover:shadow-md">Contact Us</a>
+            
+            <button id="mobile-menu-btn" class="md:hidden text-slate-600 focus:outline-none" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Fullscreen -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
+        <div class="flex items-center justify-between p-6 pb-4 border-b border-slate-100">
+            <a href="#" aria-label="AbsolutAI — Home" class="font-display font-bold text-xl tracking-tight text-dark">
+                Absolut<span class="text-accent">AI</span>
+            </a>
+            <button id="close-mobile-menu" class="text-slate-600 focus:outline-none p-2 -mr-2 hover:bg-slate-50 rounded-full transition-colors" aria-label="Close Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8">
+            <div>
+                <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Services</div>
+                <div class="flex flex-col gap-4">
+                    <a href="#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Chatbot</a>
+                    <a href="#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Emailbot</a>
+                    <a href="#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Qualify CRM</a>
+                    <a href="#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Schedule Meetings</a>
+                    <a href="#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Voice Agents</a>
+                    <a href="#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Social Media</a>
+                </div>
+            </div>
+            
+            <div class="h-px w-full bg-slate-100"></div>
+            
+            <div class="flex flex-col gap-5">
+                <a href="#setores" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Sectors</a>
+                <a href="about.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">About Us</a>
+                <a href="financing.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Financing</a>
+                <a href="#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
+            </div>
+            
+            <div class="mt-auto pt-6">
+                <a href="contact.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-accent text-white hover:bg-blue-700 text-center shadow-md">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden bg-base pt-20">
+            <div class="network-glow"></div>
+            <div class="network-bg"></div>
+            
+            <div class="absolute inset-0 pointer-events-none z-10" style="background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(255,255,255,1) 90%);"></div>
+            
+            <div class="relative z-20 flex flex-col items-center justify-center px-6 py-24 text-center max-w-4xl mx-auto w-full">
+                <h1 class="text-xs font-mono tracking-[0.2em] uppercase mb-6 text-accent animate-fade-in-up">Operating in Portugal and Worldwide</h1>
+                
+                <h2 class="font-display font-bold text-dark leading-[1.08] tracking-tight animate-fade-in-up delay-100" style="font-size:clamp(2.2rem, 5.5vw, 5rem);">
+                    Recover Up to 70% of Your Team's Time <span class="text-accent">With AI and Automation</span>
+                </h2>
+                
+                <p class="max-w-xl mt-6 text-base md:text-lg text-slate-600 leading-relaxed animate-fade-in-up delay-200">
+                    We build AI agents, automate processes, and return hours to your team — for decisions that truly make a difference.
+                </p>
+                
+                <div class="mt-10 animate-fade-in-up delay-300">
+                    <div class="flex flex-col sm:flex-row items-center gap-4 justify-center">
+                        <a href="contact.html" class="inline-flex items-center justify-center gap-3 px-7 py-3.5 rounded-full text-sm font-semibold transition-all duration-300 bg-accent text-white shadow-[0_4px_20px_rgba(37,99,235,0.3)] hover:shadow-[0_6px_25px_rgba(37,99,235,0.4)] hover:-translate-y-0.5">
+                            <span class="hidden sm:inline">Free diagnosis — See how much I can save</span>
+                            <span class="sm:hidden">Free diagnosis</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </a>
+                        <a href="#problema" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium transition-all duration-300 bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300 shadow-sm">
+                            Discover more
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3L8 13M8 13L4 9M8 13L12 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </a>
+                    </div>
+                    <p class="text-[11px] text-center mt-4 text-slate-400">No commitment · 100% free</p>
+                </div>
+                
+                <!-- Hours Saved -->
+                <div class="mt-20 hidden min-[700px]:flex flex-col items-center gap-1 text-center animate-fade-in-up delay-300">
+                    <div class="flex items-baseline justify-center gap-0.5">
+                        <span class="tabular-nums font-display font-bold text-accent drop-shadow-sm" style="font-size:clamp(1.6rem, 3vw, 2.2rem); letter-spacing:-0.02em;">325<span class="opacity-50">,000</span></span>
+                    </div>
+                    <span class="text-[10px] md:text-xs font-mono tracking-[0.15em] uppercase text-slate-400">Hours saved</span>
+                </div>
+            </div>
+            
+            <div class="absolute inset-0 pointer-events-none z-30 opacity-[0.015]" style="background-image: url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E&quot;);"></div>
+        </section>
+
+        <!-- Stats Bar -->
+        <div class="relative px-6 py-10 bg-slate-50 border-y border-slate-200">
+            <div class="max-w-5xl mx-auto flex flex-wrap justify-center gap-10 md:gap-20">
+                <div class="text-center reveal">
+                    <div class="text-3xl md:text-4xl font-bold font-display text-accent">218+</div>
+                    <div class="text-xs md:text-sm text-slate-500 mt-2 font-medium">Automations Implemented</div>
+                </div>
+                <div class="text-center reveal delay-100">
+                    <div class="text-3xl md:text-4xl font-bold font-display text-accent">12+</div>
+                    <div class="text-xs md:text-sm text-slate-500 mt-2 font-medium">Countries With Active Clients</div>
+                </div>
+                <div class="text-center reveal delay-200">
+                    <div class="text-3xl md:text-4xl font-bold font-display text-accent">98%</div>
+                    <div class="text-xs md:text-sm text-slate-500 mt-2 font-medium">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools & Technologies Ticker -->
+        <section class="relative bg-dark py-16 overflow-hidden">
+            <div class="max-w-5xl mx-auto px-6 text-center mb-12">
+                <p class="text-[10px] md:text-xs font-mono tracking-[0.25em] uppercase mb-3 text-slate-500">Tools & Technologies</p>
+                <h3 class="text-2xl md:text-3xl font-display font-bold text-white tracking-tight">High proficiency in 50+ platforms</h3>
+            </div>
+            
+            <div class="relative flex overflow-x-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
+                <div class="flex animate-scroll-tools gap-12 md:gap-16 whitespace-nowrap px-8 items-start">
+                    <!-- Tool List -->
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/openai/white" alt="OpenAI" class="h-8" title="OpenAI">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">OpenAI</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/googlegemini/white" alt="Google Gemini" class="h-8" title="Google Gemini">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Google Gemini</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/anthropic/white" alt="Anthropic" class="h-8" title="Anthropic">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Anthropic</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/perplexity/white" alt="Perplexity" class="h-8" title="Perplexity">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Perplexity</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/huggingface/white" alt="Hugging Face" class="h-8" title="Hugging Face">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Hugging Face</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/elevenlabs/white" alt="ElevenLabs" class="h-8" title="ElevenLabs">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">ElevenLabs</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/make/white" alt="Make.com" class="h-8" title="Make.com">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Make.com</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/zapier/white" alt="Zapier" class="h-8" title="Zapier">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Zapier</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/notion/white" alt="Notion" class="h-8" title="Notion">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Notion</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/airtable/white" alt="Airtable" class="h-8" title="Airtable">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Airtable</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/whatsapp/white" alt="WhatsApp" class="h-8" title="WhatsApp">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">WhatsApp</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/telegram/white" alt="Telegram" class="h-8" title="Telegram">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Telegram</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/discord/white" alt="Discord" class="h-8" title="Discord">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Discord</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/langchain/white" alt="LangChain" class="h-8" title="LangChain">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">LangChain</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/supabase/white" alt="Supabase" class="h-8" title="Supabase">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Supabase</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/firebase/white" alt="Firebase" class="h-8" title="Firebase">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Firebase</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/postgresql/white" alt="PostgreSQL" class="h-8" title="PostgreSQL">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">PostgreSQL</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/mongodb/white" alt="MongoDB" class="h-8" title="MongoDB">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">MongoDB</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/vercel/white" alt="Vercel" class="h-8" title="Vercel">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Vercel</span>
+                    </div>
+                    
+                    <!-- Duplication for infinite loop effect -->
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/openai/white" alt="OpenAI" class="h-8" title="OpenAI">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">OpenAI</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/googlegemini/white" alt="Google Gemini" class="h-8" title="Google Gemini">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Google Gemini</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/anthropic/white" alt="Anthropic" class="h-8" title="Anthropic">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Anthropic</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/perplexity/white" alt="Perplexity" class="h-8" title="Perplexity">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Perplexity</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/huggingface/white" alt="Hugging Face" class="h-8" title="Hugging Face">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Hugging Face</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/elevenlabs/white" alt="ElevenLabs" class="h-8" title="ElevenLabs">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">ElevenLabs</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/make/white" alt="Make.com" class="h-8" title="Make.com">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Make.com</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/zapier/white" alt="Zapier" class="h-8" title="Zapier">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Zapier</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/notion/white" alt="Notion" class="h-8" title="Notion">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Notion</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
+                        <img src="https://cdn.simpleicons.org/airtable/white" alt="Airtable" class="h-8" title="Airtable">
+                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Airtable</span>
+                    </div>
+                </div>
+            </div>
+            <div class="h-px w-24 bg-slate-800 mx-auto mt-16 opacity-50"></div>
+        </section>
+
+        <!-- The Problem Section -->
+        <section id="problema" class="relative px-6 py-24 md:py-32 bg-white overflow-hidden">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] pointer-events-none" style="background: radial-gradient(ellipse, rgba(37, 99, 235, 0.05) 0%, transparent 70%);"></div>
+            
+            <div class="max-w-5xl mx-auto relative">
+                <p class="text-sm font-mono tracking-[0.25em] uppercase mb-6 text-accent font-semibold reveal">The problem</p>
+                <h2 class="max-w-3xl font-display font-bold text-dark tracking-tight reveal" style="font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.15;">
+                    Your Team Wastes <span class="text-accent">Up to 70% of Its Time</span> on Tasks That AI Solves in Minutes
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 reveal delay-100">
+                        <div class="flex items-center gap-3 px-4 py-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                            <div class="w-2 h-2 rounded-full flex-shrink-0 bg-red-400"></div>
+                            <span class="text-sm text-slate-700 font-medium">Answering emails and messages</span>
+                        </div>
+                        <div class="flex items-center gap-3 px-4 py-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                            <div class="w-2 h-2 rounded-full flex-shrink-0 bg-red-400"></div>
+                            <span class="text-sm text-slate-700 font-medium">Qualifying leads in the CRM</span>
+                        </div>
+                        <div class="flex items-center gap-3 px-4 py-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                            <div class="w-2 h-2 rounded-full flex-shrink-0 bg-red-400"></div>
+                            <span class="text-sm text-slate-700 font-medium">Copying data between systems</span>
+                        </div>
+                        <div class="flex items-center gap-3 px-4 py-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                            <div class="w-2 h-2 rounded-full flex-shrink-0 bg-red-400"></div>
+                            <span class="text-sm text-slate-700 font-medium">Manual social media management</span>
+                        </div>
+                        <div class="flex items-center gap-3 px-4 py-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                            <div class="w-2 h-2 rounded-full flex-shrink-0 bg-red-400"></div>
+                            <span class="text-sm text-slate-700 font-medium">Scheduling meetings and follow-ups</span>
+                        </div>
+                        <div class="flex items-center gap-3 px-4 py-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                            <div class="w-2 h-2 rounded-full flex-shrink-0 bg-red-400"></div>
+                            <span class="text-sm text-slate-700 font-medium">Basic phone support</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col justify-center reveal delay-200">
+                        <p class="text-base md:text-lg leading-relaxed text-slate-600">While your team does this manually, your competition has already automated it.</p>
+                        <p class="text-base md:text-lg leading-relaxed mt-4 font-semibold text-dark">Every passing week is time — and money — lost.</p>
+                        
+                        <div class="mt-8">
+                            <a href="#calculadora" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 bg-accent-light text-accent border border-accent-border hover:bg-blue-100 hover:-translate-y-0.5">
+                                Calculate how much I'm losing
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-5xl mx-auto mt-24 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicos" class="relative px-6 py-24 md:py-32 bg-slate-50 border-t border-slate-200">
+            <div class="absolute top-1/4 right-0 w-[500px] h-[500px] pointer-events-none" style="background: radial-gradient(ellipse, rgba(37, 99, 235, 0.05) 0%, transparent 70%);"></div>
+            
+            <div class="max-w-5xl mx-auto relative">
+                <p class="text-sm font-mono tracking-[0.25em] uppercase mb-6 text-accent font-semibold reveal">What we do</p>
+                <h2 class="mb-6 max-w-3xl font-display font-bold text-dark tracking-tight reveal" style="font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.15;">
+                    Custom Agents and <span class="text-accent">Automations</span>
+                </h2>
+                <p class="text-base md:text-lg mb-16 max-w-xl text-slate-600 leading-relaxed reveal">Direct solutions that integrate into your current processes and work from day one.</p>
+                
+                <div class="border-t border-slate-200 reveal">
+                    <!-- Chatbot & Text Agents -->
+                    <div class="service-row group relative py-8 md:py-10 transition-colors duration-300 border-b border-slate-200">
+                        <div class="grid grid-cols-12 gap-4 md:gap-6 items-start px-4 md:px-6">
+                            <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-3">
+                                <span class="text-xs font-mono text-slate-400 font-semibold">01</span>
+                                <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-slate-200 shadow-sm group-hover:border-accent-border group-hover:shadow-md transition-all">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-accent"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                </div>
+                            </div>
+                            <div class="col-span-10 md:col-span-4">
+                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark">Chatbots & Text Agents</h3>
+                                <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">WhatsApp, Website & SMS</span>
+                            </div>
+                            <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
+                                <p class="text-sm leading-relaxed text-slate-600">Virtual assistants that converse naturally with your clients. They answer doubts, capture information, and guide the user 24/7 without human intervention.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emailbot -->
+                    <div class="service-row group relative py-8 md:py-10 transition-colors duration-300 border-b border-slate-200">
+                        <div class="grid grid-cols-12 gap-4 md:gap-6 items-start px-4 md:px-6">
+                            <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-3">
+                                <span class="text-xs font-mono text-slate-400 font-semibold">02</span>
+                                <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-slate-200 shadow-sm group-hover:border-accent-border group-hover:shadow-md transition-all">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-accent"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                            </div>
+                            <div class="col-span-10 md:col-span-4">
+                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark">Emailbot</h3>
+                                <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">Inbox Management</span>
+                            </div>
+                            <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
+                                <p class="text-sm leading-relaxed text-slate-600">Intelligent automation of your mailbox. The AI reads, categorizes, forwards to the right person, and, in many cases, drafts and sends the perfect response autonomously.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Qualify Leads CRM -->
+                    <div class="service-row group relative py-8 md:py-10 transition-colors duration-300 border-b border-slate-200">
+                        <div class="grid grid-cols-12 gap-4 md:gap-6 items-start px-4 md:px-6">
+                            <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-3">
+                                <span class="text-xs font-mono text-slate-400 font-semibold">03</span>
+                                <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-slate-200 shadow-sm group-hover:border-accent-border group-hover:shadow-md transition-all">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-accent"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                </div>
+                            </div>
+                            <div class="col-span-10 md:col-span-4">
+                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark">Qualify Leads CRM</h3>
+                                <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">Sales Integration</span>
+                            </div>
+                            <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
+                                <p class="text-sm leading-relaxed text-slate-600">Say goodbye to manual data entry. We capture leads from any channel, qualify them with strategic questions, and insert structured information directly into your CRM (HubSpot, Salesforce, etc).</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Schedule Meetings -->
+                    <div class="service-row group relative py-8 md:py-10 transition-colors duration-300 border-b border-slate-200">
+                        <div class="grid grid-cols-12 gap-4 md:gap-6 items-start px-4 md:px-6">
+                            <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-3">
+                                <span class="text-xs font-mono text-slate-400 font-semibold">04</span>
+                                <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-slate-200 shadow-sm group-hover:border-accent-border group-hover:shadow-md transition-all">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-accent"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                                </div>
+                            </div>
+                            <div class="col-span-10 md:col-span-4">
+                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark">Schedule Meetings</h3>
+                                <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">Calendar Management</span>
+                            </div>
+                            <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
+                                <p class="text-sm leading-relaxed text-slate-600">Eliminate infinite email exchanges to find a slot. Our AI understands user preferences, checks your availability, and books directly in your agenda in an optimized way.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Voice Agents -->
+                    <div class="service-row group relative py-8 md:py-10 transition-colors duration-300 border-b border-slate-200">
+                        <div class="grid grid-cols-12 gap-4 md:gap-6 items-start px-4 md:px-6">
+                            <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-3">
+                                <span class="text-xs font-mono text-slate-400 font-semibold">05</span>
+                                <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-slate-200 shadow-sm group-hover:border-accent-border group-hover:shadow-md transition-all">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-accent"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                                </div>
+                            </div>
+                            <div class="col-span-10 md:col-span-4">
+                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark">Voice Agents</h3>
+                                <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">Phone Support</span>
+                            </div>
+                            <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
+                                <p class="text-sm leading-relaxed text-slate-600">Telephone systems with humanized voice and no latency. They answer clients, reply to questions, and execute actions in real-time over the phone.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="service-row group relative py-8 md:py-10 transition-colors duration-300 border-b border-slate-200">
+                        <div class="grid grid-cols-12 gap-4 md:gap-6 items-start px-4 md:px-6">
+                            <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-3">
+                                <span class="text-xs font-mono text-slate-400 font-semibold">06</span>
+                                <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-slate-200 shadow-sm group-hover:border-accent-border group-hover:shadow-md transition-all">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-accent"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                                </div>
+                            </div>
+                            <div class="col-span-10 md:col-span-4">
+                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark">Social Media</h3>
+                                <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">Post & Reply</span>
+                            </div>
+                            <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
+                                <p class="text-sm leading-relaxed text-slate-600">We automate the publication of your content on the appropriate platforms and integrate AI to instantly reply to comments and direct messages from your followers, increasing engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Calculator -->
+        <section id="calculadora" class="relative px-6 py-24 md:py-32 bg-slate-50 border-t border-slate-200 overflow-hidden">
+            <div class="max-w-4xl mx-auto relative reveal">
+                <p class="text-sm font-mono tracking-[0.25em] uppercase mb-4 text-accent font-semibold text-center">ROI Calculator</p>
+                <h2 class="mb-12 font-display font-bold text-dark tracking-tight text-center" style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15;">
+                    How Much Time Can Your Company <span class="text-accent">Recover?</span>
+                </h2>
+                
+                <div class="bg-white p-6 md:p-10 rounded-3xl shadow-xl border border-slate-200">
+                    <p class="text-sm text-slate-600 font-medium mb-6 text-center">Select the tasks your team does manually (click to calculate):</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8" id="calc-grid">
+                        <button class="calc-btn group w-full flex items-center justify-between p-4 rounded-xl text-left text-sm transition-all bg-white border border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-700 font-medium" data-hours="10">
+                            <div class="flex items-center gap-3">
+                                <div class="empty-box w-5 h-5 rounded border-2 border-slate-300 flex-shrink-0"></div>
+                                <div class="check-icon hidden w-5 h-5 rounded bg-accent text-white flex items-center justify-center flex-shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <span>Answer emails and chat</span>
+                            </div>
+                            <span class="text-xs text-slate-400 group-hover:text-blue-500 font-mono">+10h</span>
+                        </button>
+
+                        <button class="calc-btn group w-full flex items-center justify-between p-4 rounded-xl text-left text-sm transition-all bg-white border border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-700 font-medium" data-hours="8">
+                            <div class="flex items-center gap-3">
+                                <div class="empty-box w-5 h-5 rounded border-2 border-slate-300 flex-shrink-0"></div>
+                                <div class="check-icon hidden w-5 h-5 rounded bg-accent text-white flex items-center justify-center flex-shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <span>Qualify leads in CRM</span>
+                            </div>
+                            <span class="text-xs text-slate-400 group-hover:text-blue-500 font-mono">+8h</span>
+                        </button>
+
+                        <button class="calc-btn group w-full flex items-center justify-between p-4 rounded-xl text-left text-sm transition-all bg-white border border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-700 font-medium" data-hours="6">
+                            <div class="flex items-center gap-3">
+                                <div class="empty-box w-5 h-5 rounded border-2 border-slate-300 flex-shrink-0"></div>
+                                <div class="check-icon hidden w-5 h-5 rounded bg-accent text-white flex items-center justify-center flex-shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <span>Schedule meetings</span>
+                            </div>
+                            <span class="text-xs text-slate-400 group-hover:text-blue-500 font-mono">+6h</span>
+                        </button>
+
+                        <button class="calc-btn group w-full flex items-center justify-between p-4 rounded-xl text-left text-sm transition-all bg-white border border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-700 font-medium" data-hours="5">
+                            <div class="flex items-center gap-3">
+                                <div class="empty-box w-5 h-5 rounded border-2 border-slate-300 flex-shrink-0"></div>
+                                <div class="check-icon hidden w-5 h-5 rounded bg-accent text-white flex items-center justify-center flex-shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <span>Manage social comments</span>
+                            </div>
+                            <span class="text-xs text-slate-400 group-hover:text-blue-500 font-mono">+5h</span>
+                        </button>
+                    </div>
+
+                    <div class="text-center pt-8 border-t border-slate-100 transition-all duration-300">
+                        <h4 id="calc-result" class="text-4xl font-display font-bold text-slate-300 mb-2 transition-colors duration-300">0h / week</h4>
+                        <p class="text-sm text-slate-500 font-medium">Estimated time that can be recovered with AI agents.</p>
+                        
+                        <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 mt-6 rounded-full text-sm font-semibold transition-all duration-300 bg-dark text-white hover:bg-slate-800 shadow-md">
+                            Schedule personalized diagnosis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AbsolutAI Connection Visual -->
+        <section class="relative bg-slate-50 py-24 border-y border-slate-200 overflow-hidden">
+            <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(circle at 50% 50%, rgba(37,99,235,0.03) 0%, transparent 60%);"></div>
+            
+            <div class="max-w-5xl mx-auto px-6 relative z-10 flex flex-col items-center">
+                <div class="relative flex items-baseline justify-center mb-8 reveal">
+                    <span class="text-4xl md:text-5xl font-display font-medium text-dark tracking-tight">Absolut</span>
+                    <span class="text-4xl md:text-5xl font-display font-bold text-accent tracking-wide">AI</span>
+                </div>
+                
+                <h3 class="text-2xl md:text-3xl font-display font-bold text-center mb-4 text-dark reveal delay-100">Your company with AbsolutAI</h3>
+                <p class="text-base text-slate-600 text-center mb-12 reveal delay-200">Everything connected. Everything automated. Your Partner for <span class="font-bold text-accent">Technological Transformation</span>.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full reveal delay-300">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-lg">Embedded in the business</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">We audit the operation, speak with your team, and experience the same challenges you do.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-lg">Time ROI</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Our KPI is the hours recovered so your team can make strategic decisions and differentiate themselves.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-lg">Practical Method</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">We map, automate, integrate, and scale. Real results, without complex theoretical processes.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-lg">Long-Term Vision</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">We track, adjust, and expand. The success of automation in your company is our success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="processo" class="relative px-6 py-24 bg-white">
+            <div class="max-w-5xl mx-auto">
+                <p class="text-sm font-mono tracking-[0.25em] uppercase mb-6 text-accent font-semibold reveal">Our method</p>
+                <h2 class="font-display font-bold text-dark tracking-tight reveal" style="font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.15;">
+                    AbsolutAI <span class="text-accent">Method</span>
+                </h2>
+                
+                <div class="mt-16 space-y-0 border-t border-slate-200">
+                    <div class="grid grid-cols-12 gap-4 py-10 border-b border-slate-200 reveal">
+                        <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-1">
+                            <span class="text-3xl font-display font-bold text-accent">1</span>
+                        </div>
+                        <div class="col-span-10 md:col-span-3">
+                            <h3 class="text-xl md:text-2xl font-display font-bold text-dark">Audit</h3>
+                        </div>
+                        <div class="col-span-12 md:col-span-8 md:col-start-5">
+                            <p class="text-base leading-relaxed text-slate-600">We enter your business. We audit processes, identify bottlenecks, and map where AI generates the greatest real impact.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-12 gap-4 py-10 border-b border-slate-200 reveal delay-100">
+                        <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-1">
+                            <span class="text-3xl font-display font-bold text-accent">2</span>
+                        </div>
+                        <div class="col-span-10 md:col-span-3">
+                            <h3 class="text-xl md:text-2xl font-display font-bold text-dark">Build</h3>
+                        </div>
+                        <div class="col-span-12 md:col-span-8 md:col-start-5">
+                            <p class="text-base leading-relaxed text-slate-600">We design and build customized AI agents and automations tailored to your context and systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-12 gap-4 py-10 border-b border-slate-200 reveal delay-200">
+                        <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-1">
+                            <span class="text-3xl font-display font-bold text-accent">3</span>
+                        </div>
+                        <div class="col-span-10 md:col-span-3">
+                            <h3 class="text-xl md:text-2xl font-display font-bold text-dark">Integrate</h3>
+                        </div>
+                        <div class="col-span-12 md:col-span-8 md:col-start-5">
+                            <p class="text-base leading-relaxed text-slate-600">We connect everything — CRM, WhatsApp, email, social networks. Agents start working flawlessly in your ecosystem.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-12 gap-4 py-10 border-b border-slate-200 reveal delay-300">
+                        <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-1">
+                            <span class="text-3xl font-display font-bold text-accent">4</span>
+                        </div>
+                        <div class="col-span-10 md:col-span-3">
+                            <h3 class="text-xl md:text-2xl font-display font-bold text-dark">Scale</h3>
+                        </div>
+                        <div class="col-span-12 md:col-span-8 md:col-start-5">
+                            <p class="text-base leading-relaxed text-slate-600">We monitor results, adjust, and expand integrations. Your ROI grows month after month.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sectors -->
+        <section id="setores" class="relative px-6 py-24 bg-slate-50 border-t border-slate-200">
+            <div class="max-w-5xl mx-auto">
+                <p class="text-sm font-mono tracking-[0.25em] uppercase mb-6 text-accent font-semibold reveal">AI for your sector</p>
+                <h2 class="mb-6 max-w-3xl font-display font-bold text-dark tracking-tight reveal" style="font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.15;">
+                    Artificial Intelligence For <span class="text-accent">Any Sector</span>
+                </h2>
+                <p class="text-base md:text-lg mb-12 max-w-xl text-slate-600 leading-relaxed reveal">Regardless of the industry, AI adapts to your context. We have already helped companies in these sectors:</p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 reveal delay-100">
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Clinics</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Automatic triage, scheduling, and follow-up</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Real Estate</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Qualifies leads and responds 24/7 to prospects</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">E-commerce</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Customer service, upselling, and return support</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Restaurants</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Reservation management and feedback collection</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12L12 12m8-8L8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8L20 20"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Salons & Aesthetics</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Automatic appointments and fewer no-shows</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M12 3v18m7-13l3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2a17 17 0 0 0 8 2h1M5 8l3 8a5 5 0 0 1-6 0zV7m2 14h10"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Lawyers</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Case triage and answers to FAQs</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829zM2.5 21.5l1.4-1.4M20.1 3.9l1.4-1.4M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829zM9.6 14.4l4.8-4.8"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Gyms</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Registrations and retention campaigns</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5m0-4a6 6 0 0 1 6 6v3M4 15v-3a6 6 0 0 1 6-6"/><rect width="20" height="4" x="2" y="15" rx="1"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Construction</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Quotes and active project follow-up</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Education</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Simplified enrollments and student support</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Workshops</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Schedules reviews and sends car alerts</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8L4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1l3 2l2 3l1-1v-3l3-2l3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Tourism</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Customizes itineraries and manages B2C bookings</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M10 18v-7m1.12-8.802a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949zM14 18v-7m4 7v-7M3 22h18M6 18v-7"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Accounting</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Automatic document processing</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Industry</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Monitoring and supplier chain management</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Retail</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Manages stock and automated customer service</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Support (B2B)</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Ticket resolution and AI escalation</div>
+                    </a>
+                    <a href="contact.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8c0 5.5-4.78 10-10 10"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                        <div class="text-sm font-display font-bold mb-1 text-dark">Agriculture</div>
+                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Field data and supplier management</div>
+                    </a>
+                </div>
+                
+                <div class="mt-12 text-center reveal delay-200">
+                    <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 bg-white border border-slate-200 text-slate-700 hover:border-accent hover:text-accent hover:shadow-sm">
+                        Can't find your sector? Talk to us
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:translate-x-1"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="relative px-6 py-24 bg-white border-t border-slate-200">
+            <div class="max-w-3xl mx-auto">
+                <p class="text-sm font-mono tracking-[0.25em] uppercase mb-8 text-accent font-semibold reveal">Frequently Asked Questions</p>
+                <h2 class="mb-12 font-display font-bold text-dark tracking-tight reveal" style="font-size: clamp(1.5rem, 3vw, 2rem);">
+                    Questions About AI Agents and <span class="text-accent">Automation</span>
+                </h2>
+                
+                <div class="border-t border-slate-200 reveal delay-100">
+                    <details class="group border-b border-slate-200">
+                        <summary class="flex items-center justify-between py-6 cursor-pointer text-base text-dark hover:text-accent font-display font-bold transition-colors list-none">
+                            What is an AI agent? 
+                            <span class="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-xl ml-4 font-normal">+</span>
+                        </summary>
+                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">It is intelligent software that autonomously executes tasks — answers messages, qualifies leads, processes data, makes simple decisions. It works 24/7, learns from your business context, and integrates into your existing systems.</div>
+                    </details>
+                    
+                    <details class="group border-b border-slate-200">
+                        <summary class="flex items-center justify-between py-6 cursor-pointer text-base text-dark hover:text-accent font-display font-bold transition-colors list-none">
+                            What is the difference between automation and AI? 
+                            <span class="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-xl ml-4 font-normal">+</span>
+                        </summary>
+                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">Automation follows fixed rules. AI interprets and adapts. With AbsolutAI, we combine both to create perfect and dynamic workflows for your company.</div>
+                    </details>
+
+                    <details class="group border-b border-slate-200">
+                        <summary class="flex items-center justify-between py-6 cursor-pointer text-base text-dark hover:text-accent font-display font-bold transition-colors list-none">
+                            Do I need a technical team to use AI? 
+                            <span class="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-xl ml-4 font-normal">+</span>
+                        </summary>
+                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">No. We design everything for your team to use without technical training. We provide documentation, do onboarding, and offer continuous support.</div>
+                    </details>
+                    
+                    <details class="group border-b border-slate-200">
+                        <summary class="flex items-center justify-between py-6 cursor-pointer text-base text-dark hover:text-accent font-display font-bold transition-colors list-none">
+                            How long does implementation take? 
+                            <span class="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-xl ml-4 font-normal">+</span>
+                        </summary>
+                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">It depends on complexity, but most of our basic agents (chatbots, qualification bots) are up and running in 2 to 4 weeks. More complex deep integration systems may take between 6 to 8 weeks.</div>
+                    </details>
+                    
+                    <details class="group border-b border-slate-200">
+                        <summary class="flex items-center justify-between py-6 cursor-pointer text-base text-dark hover:text-accent font-display font-bold transition-colors list-none">
+                            Will AI replace my team? 
+                            <span class="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-xl ml-4 font-normal">+</span>
+                        </summary>
+                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">No. The goal of AbsolutAI is to free your employees from repetitive and monotonous tasks (like processing data or answering the same questions dozens of times). Thus, your team focuses on strategic, creative work and relationships that generate more value.</div>
+                    </details>
+
+                    <details class="group border-b border-slate-200">
+                        <summary class="flex items-center justify-between py-6 cursor-pointer text-base text-dark hover:text-accent font-display font-bold transition-colors list-none">
+                            How do you guarantee data security and privacy? 
+                            <span class="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-xl ml-4 font-normal">+</span>
+                        </summary>
+                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">We take security very seriously. We use secure infrastructures in compliance with the GDPR (General Data Protection Regulation). Your company and client data is never shared with third parties or used to train public AI models.</div>
+                    </details>
+
+                    <details class="group border-b border-slate-200">
+                        <summary class="flex items-center justify-between py-6 cursor-pointer text-base text-dark hover:text-accent font-display font-bold transition-colors list-none">
+                            Does your AI integrate with the software we already use (CRM, ERP)? 
+                            <span class="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-xl ml-4 font-normal">+</span>
+                        </summary>
+                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">Yes! We are integration specialists. We connect AI agents to your current software (HubSpot, Salesforce, Pipedrive, Shopify, billing software, etc.) so that data flows invisibly and you don't have to change the way your company already works.</div>
+                    </details>
+
+                    <details class="group border-b border-slate-200">
+                        <summary class="flex items-center justify-between py-6 cursor-pointer text-base text-dark hover:text-accent font-display font-bold transition-colors list-none">
+                            In what languages can the agents operate? 
+                            <span class="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-xl ml-4 font-normal">+</span>
+                        </summary>
+                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">Since we operate in Portugal and Worldwide, our agents are prepared to act natively in dozens of languages (Portuguese, English, Spanish, French, etc.), perfectly understanding the context and nuances of each language.</div>
+                    </details>
+                    
+                    <details class="group border-b border-slate-200">
+                        <summary class="flex items-center justify-between py-6 cursor-pointer text-base text-dark hover:text-accent font-display font-bold transition-colors list-none">
+                            What is the cost of the service? 
+                            <span class="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-xl ml-4 font-normal">+</span>
+                        </summary>
+                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">The investment depends on your specific needs. We offer a 100% free diagnosis where we map your current process and present a plan with the estimated ROI (Return on Investment). Most of our clients recover their investment quickly through the hours saved.</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="relative px-6 py-32 overflow-hidden bg-slate-100 border-t border-slate-200">
+            <div class="absolute inset-0 pointer-events-none bg-gradient-to-b from-white to-slate-100"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] pointer-events-none" style="background: radial-gradient(ellipse, rgba(37, 99, 235, 0.05) 0%, transparent 60%);"></div>
+            
+            <div class="max-w-4xl mx-auto text-center relative reveal">
+                <h2 class="font-display font-bold text-dark" style="font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.1; letter-spacing: -0.03em;">
+                    Start Automating Your <span class="text-accent">Company Today</span>
+                </h2>
+                <p class="max-w-xl mx-auto mt-6 text-lg text-slate-600 leading-relaxed font-medium">
+                    Get a free initial diagnosis. We analyze your processes and show where AI can make a difference in your operation.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-12">
+                    <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-bold transition-all duration-300 bg-accent text-white shadow-lg shadow-blue-500/30 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/40">
+                        Schedule Diagnosis
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
+                    </a>
+                    <a href="mailto:contato@absolutai.com" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-bold transition-all duration-300 bg-white border-2 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50 shadow-sm">
+                        Send email
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative border-t border-slate-200 bg-white overflow-hidden">
+        <div class="relative max-w-6xl mx-auto px-6 pt-16 pb-8">
+            <div class="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8 mb-12">
+                <!-- Branding -->
+                <div class="col-span-2 md:col-span-4">
+                    <div class="font-display font-bold text-xl tracking-tight text-dark mb-4">
+                        Absolut<span class="text-accent">AI</span>
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6 max-w-xs font-medium">
+                        Artificial Intelligence Agency for companies. We operate in Portugal and worldwide, creating automations that bring results.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-span-1 md:col-span-2 md:col-start-7">
+                    <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navigation</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#servicos" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Services</a></li>
+                        <li><a href="about.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">About Us</a></li>
+                        <li><a href="financing.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Financing</a></li>
+                        <li><a href="#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-2 md:col-span-3 md:col-start-10">
+                    <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Contact</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <span class="text-sm text-slate-500 font-medium flex items-start gap-2">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent mt-0.5"><path d="M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                Portugal · Worldwide
+                            </span>
+                        </li>
+                        <li>
+                            <a href="mailto:contato@absolutai.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                contato@absolutai.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <p class="text-xs text-slate-400 font-medium">&copy; 2026 <span class="font-display font-bold text-slate-600">AbsolutAI</span>. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="privacy.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Privacy</a>
+                    <a href="terms.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Terms</a>
+                    <div class="h-4 w-px bg-slate-200"></div>
+                    <div class="flex items-center gap-2 text-xs font-bold">
+                        <a href="../pt/index.html" class="text-slate-400 hover:text-accent transition-colors">PT</a>
+                        <span class="text-slate-300">|</span>
+                        <a href="index.html" class="text-accent">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Mobile Menu Logic
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const closeMobileMenuBtn = document.getElementById('close-mobile-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            if(mobileMenuBtn && mobileMenu && closeMobileMenuBtn) {
+                // Open menu and prevent scroll
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
+
+                // Close menu (X icon) and reactivate scroll
+                closeMobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
+                });
+
+                // Close menu on link click
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
+
+            // Calculator Logic
+            const calcButtons = document.querySelectorAll('.calc-btn');
+            const totalHoursEl = document.getElementById('calc-result');
+            let totalHours = 0;
+
+            calcButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const hours = parseInt(btn.dataset.hours);
+                    const isActive = btn.classList.contains('active-calc');
+                    
+                    if (isActive) {
+                        // Deactivate
+                        btn.classList.remove('active-calc', 'bg-blue-50', 'border-blue-400', 'text-blue-900', 'shadow-inner');
+                        btn.classList.add('bg-white', 'border-slate-200', 'text-slate-700');
+                        btn.querySelector('.check-icon').classList.add('hidden');
+                        btn.querySelector('.empty-box').classList.remove('hidden');
+                        totalHours -= hours;
+                    } else {
+                        // Activate
+                        btn.classList.add('active-calc', 'bg-blue-50', 'border-blue-400', 'text-blue-900', 'shadow-inner');
+                        btn.classList.remove('bg-white', 'border-slate-200', 'text-slate-700');
+                        btn.querySelector('.check-icon').classList.remove('hidden');
+                        btn.querySelector('.empty-box').classList.add('hidden');
+                        totalHours += hours;
+                    }
+                    
+                    // Update the text
+                    totalHoursEl.textContent = `~${totalHours}h / week`;
+                    
+                    if(totalHours > 0) {
+                        totalHoursEl.classList.remove('text-slate-300');
+                        totalHoursEl.classList.add('text-accent');
+                    } else {
+                        totalHoursEl.classList.add('text-slate-300');
+                        totalHoursEl.classList.remove('text-accent');
+                    }
+                });
+            });
+
+            // Intersection Observer for fade-in animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -10% 0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
+
+            // Navbar Glass effect on scroll
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.style.boxShadow = "0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)";
+                    navbar.style.border = "1px solid rgba(0, 0, 0, 0.08)";
+                } else {
+                    navbar.style.boxShadow = "none";
+                    navbar.style.border = "1px solid rgba(0, 0, 0, 0.05)";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
