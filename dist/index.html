@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting... | AbsolutAI</title>
+    <meta name="description" content="Artificial intelligence agency. We create AI agents, automate processes, and give back up to 70% of your team's time.">
+    
+    <!-- Fallback for browsers without JavaScript -->
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=en/index.html">
+    </noscript>
+    
+    <script>
+        (function() {
+            var languages = navigator.languages && navigator.languages.length
+                ? navigator.languages
+                : [navigator.language || navigator.userLanguage || 'en'];
+
+            var isPortuguese = languages.some(function(language) {
+                return String(language).toLowerCase().indexOf('pt') === 0;
+            });
+
+            var targetUrl = isPortuguese ? 'pt/' : 'en/';
+            window.location.replace(targetUrl);
+        })();
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, please <a href="en/index.html">click here for English</a> or <a href="pt/index.html">clique aqui para Português</a>.</p>
+</body>
+</html>

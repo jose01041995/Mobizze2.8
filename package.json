@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && mkdir -p dist && cp -R index.html en pt dist/"
+    "build": "if [ -d en ] && [ -d pt ]; then rm -rf dist && mkdir -p dist && cp -R index.html en pt dist/; elif [ -d dist/en ] && [ -d dist/pt ]; then echo \"Using existing dist output\"; else echo \"Missing en/pt source folders or dist output\" >&2; exit 1; fi"
   }
 }
