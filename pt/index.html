@@ -3,10 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agência de Inteligência Artificial em Portugal e no Mundo | AbsolutAI</title>
+    <title>Agência de Inteligência Artificial em Portugal e no Mundo | Mobizze</title>
     <meta name="description" content="Agência de inteligência artificial. Criamos agentes de IA, automatizamos processos e devolvemos até 70% do tempo à sua equipa. Diagnóstico gratuito.">
     
-    <base href="/pt/">
+    <!-- Favicon -->
+    <link rel="icon" href="https://absolutarget.com/wp-content/uploads/2025/04/cropped-Novo-Projeto-1-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://absolutarget.com/wp-content/uploads/2025/04/cropped-Novo-Projeto-1-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://absolutarget.com/wp-content/uploads/2025/04/cropped-Novo-Projeto-1-180x180.png">
+
+    <!-- Script de Deteção de Idioma e Redirecionamento -->
+    <script>
+        (function() {
+            var path = window.location.pathname;
+            var hash = window.location.hash;
+            
+            // Verifica se já estamos nas pastas /en/ ou /pt/ (ou no hash de preview) para evitar loop infinito
+            if (path.indexOf('/en/') === -1 && path.indexOf('/pt/') === -1 && hash.indexOf('/en/') === -1 && hash.indexOf('/pt/') === -1) {
+                // Vai buscar a linguagem preferida do utilizador
+                var lang = navigator.language || navigator.userLanguage;
+                
+                // Se começar por 'pt' (pt-PT, pt-BR, etc.), é português. Caso contrário, assume inglês como padrão global.
+                var isPt = lang.toLowerCase().startsWith('pt');
+                var targetFolder = isPt ? '/pt/' : '/en/';
+                
+                // --- INSTRUÇÕES PARA PRODUÇÃO ---
+                // No seu servidor real, descomente a linha abaixo para redirecionar fisicamente os utilizadores:
+                // window.location.replace(targetFolder);
+                
+                // --- CÓDIGO APENAS PARA DEMONSTRAÇÃO NESTE EDITOR ---
+                try {
+                    // Tenta mudar o URL visualmente sem causar um refresh na página (bom para Single Page Apps, mas limitado aqui)
+                    window.history.replaceState(null, '', targetFolder);
+                } catch (e) {
+                    // O ambiente de pré-visualização (sandbox) bloqueia a alteração do history.
+                    // Usamos a âncora (hash) para contornar isso visualmente sem causar erro 404
+                    window.location.hash = targetFolder;
+                    console.warn("Ambiente restrito bloqueou replaceState. A usar hash para visualização: " + targetFolder);
+                }
+            }
+        })();
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,7 +142,6 @@
         .animate-scroll-tools {
             /* Duração ajustada para uma lista mais longa */
             animation: scroll-tools 85s linear infinite;
-            animation: scroll-tools 80s linear infinite;
         }
     </style>
 </head>
@@ -114,8 +150,8 @@
     <!-- Navigation -->
     <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
         <div class="flex items-center justify-between h-12">
-            <a href="#" aria-label="AbsolutAI — Home" class="font-display font-bold text-lg tracking-tight text-dark">
-                Absolut<span class="text-accent">AI</span>
+            <a href="#" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
+                Mobizze
             </a>
             <div class="hidden md:flex items-center gap-6 h-full">
                 <!-- Dropdown Serviços -->
@@ -124,13 +160,13 @@
                     <!-- Hitbox Invisível e Menu -->
                     <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
                         <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
-                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Chatbot</a>
-                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbot</a>
-                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Qualificar Leads CRM</a>
-                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agendar Reuniões</a>
-                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Voz</a>
-                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Texto</a>
-                            <a href="#servicos" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Redes Sociais</a>
+                            <a href="chatbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Chatbot</a>
+                            <a href="emailbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbot</a>
+                            <a href="qualificar-leads-crm.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Qualificar Leads CRM</a>
+                            <a href="agendar-reunioes.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agendar Reuniões</a>
+                            <a href="agentes-de-voz.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Voz</a>
+                            <a href="agentes-de-texto.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Texto</a>
+                            <a href="redes-sociais.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Redes Sociais</a>
                         </div>
                     </div>
                 </div>
@@ -141,13 +177,22 @@
                     <!-- Hitbox Invisível e Menu -->
                     <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-48 z-50">
                         <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
-                            <a href="#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Clínicas & Saúde</a>
-                            <a href="#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Imobiliárias</a>
-                            <a href="#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">E-commerce</a>
-                            <a href="#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Restaurantes</a>
-                            <a href="#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Salões & Estética</a>
+                            <a href="setor-clinicas-saude.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Clínicas & Saúde</a>
+                            <a href="setor-imobiliarias.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Imobiliárias</a>
+                            <a href="setor-ecommerce.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">E-commerce</a>
+                            <a href="setor-restaurantes.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Restaurantes</a>
+                            <a href="setor-saloes-estetica.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Salões & Estética</a>
+                            <a href="setor-construcao.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Construção</a>
+                            <a href="setor-educacao.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Educação</a>
+                            <a href="setor-oficinas.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Oficinas</a>
+                            <a href="setor-turismo.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Turismo</a>
+                            <a href="setor-contabilidade.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Contabilidade</a>
+                            <a href="setor-industria.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Indústria</a>
+                            <a href="setor-suporte-b2b.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Suporte B2B</a>
+                            <a href="setor-agricultura.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agricultura</a>
+                            <a href="setor-retalho.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Retalho</a>
                             <div class="h-px bg-slate-100 my-1 mx-2"></div>
-                            <a href="#setores" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors">Ver todos os setores &rarr;</a>
+                            <a href="setores.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors">Ver todos os setores &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -169,8 +214,8 @@
     <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
         <!-- Cabeçalho Menu Mobile -->
         <div class="flex items-center justify-between p-6 pb-4 border-b border-slate-100">
-            <a href="#" aria-label="AbsolutAI — Home" class="font-display font-bold text-xl tracking-tight text-dark">
-                Absolut<span class="text-accent">AI</span>
+            <a href="#" aria-label="Mobizze — Home" class="font-display font-bold text-xl tracking-tight text-dark">
+                Mobizze
             </a>
             <button id="close-mobile-menu" class="text-slate-600 focus:outline-none p-2 -mr-2 hover:bg-slate-50 rounded-full transition-colors" aria-label="Fechar Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -182,19 +227,20 @@
             <div>
                 <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Serviços</div>
                 <div class="flex flex-col gap-4">
-                    <a href="#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Chatbot</a>
-                    <a href="#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Emailbot</a>
-                    <a href="#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Qualificar CRM</a>
-                    <a href="#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agendar Reuniões</a>
-                    <a href="#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Voz</a>
-                    <a href="#servicos" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Redes Sociais</a>
+                    <a href="chatbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Chatbot</a>
+                    <a href="emailbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Emailbot</a>
+                    <a href="qualificar-leads-crm.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Qualificar CRM</a>
+                    <a href="agendar-reunioes.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agendar Reuniões</a>
+                    <a href="agentes-de-voz.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Voz</a>
+                    <a href="agentes-de-texto.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Texto</a>
+                    <a href="redes-sociais.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Redes Sociais</a>
                 </div>
             </div>
             
             <div class="h-px w-full bg-slate-100"></div>
             
             <div class="flex flex-col gap-5">
-                <a href="#setores" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Setores</a>
+                <a href="setores.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Setores</a>
                 <a href="sobre.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Sobre Nós</a>
                 <a href="financiamento.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Financiamento</a>
                 <a href="#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
@@ -271,6 +317,22 @@
                 </div>
             </div>
         </div>
+
+        <!-- Clients Section -->
+        <section class="bg-white py-16 sm:py-20">
+            <div class="max-w-5xl mx-auto px-6">
+                <h2 class="text-center text-base font-semibold leading-8 text-slate-600 reveal">
+                    A confiança de empresas líderes em Portugal
+                </h2>
+                <!-- NOTA: Os caminhos dos logótipos estão definidos para os respetivos websites. Classes ajustadas para melhor consistência de tamanho. -->
+                <div class="mx-auto mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-4 reveal delay-100">
+                    <img class="col-span-1 max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" src="https://portugalshoes.com/assets/imgs/logoshoes.png" alt="Portugal Shoes">
+                    <img class="col-span-1 max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" src="https://portugaltextile.com/wp-content/uploads/2023/05/cropped-slogan_update-1-ai4.png" alt="Portugal Textile">
+                    <img class="col-span-1 max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" src="https://pneusjosilex.pt/wp-content/uploads/2017/12/Josilex_Logo-01-1.fw_.png" alt="Josilex">
+                    <img class="col-span-1 max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" src="https://www.diferentefeito.com/wp-content/uploads/2017/04/Logotipo.png" alt="DiferenteFeito">
+                </div>
+            </div>
+        </section>
 
         <!-- Ferramentas & Tecnologias Ticker -->
         <section class="relative bg-dark py-16 overflow-hidden">
@@ -408,10 +470,6 @@
                     <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
                         <img src="https://cdn.simpleicons.org/elevenlabs/white" alt="ElevenLabs" class="h-8" title="ElevenLabs">
                         <span class="text-[11px] font-mono text-slate-400 leading-tight">ElevenLabs</span>
-                    </div>
-                    <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
-                        <img src="https://cdn.simpleicons.org/midjourney/white" alt="Midjourney" class="h-8" title="Midjourney">
-                        <span class="text-[11px] font-mono text-slate-400 leading-tight">Midjourney</span>
                     </div>
                     <div class="flex flex-col items-center justify-start gap-3 text-center w-24">
                         <img src="https://cdn.simpleicons.org/make/white" alt="Make.com" class="h-8" title="Make.com">
@@ -570,7 +628,7 @@
                                 </div>
                             </div>
                             <div class="col-span-10 md:col-span-4">
-                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark">Chatbots & Agentes de Texto</h3>
+                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark"><a href="agentes-de-texto.html" class="group-hover:text-accent transition-colors">Chatbots & Agentes de Texto</a></h3>
                                 <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">WhatsApp, Site & SMS</span>
                             </div>
                             <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
@@ -627,7 +685,7 @@
                                 </div>
                             </div>
                             <div class="col-span-10 md:col-span-4">
-                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark">Agendar Reuniões</h3>
+                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark"><a href="agendar-reunioes.html" class="group-hover:text-accent transition-colors">Agendar Reuniões</a></h3>
                                 <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">Gestão de Calendário</span>
                             </div>
                             <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
@@ -646,7 +704,7 @@
                                 </div>
                             </div>
                             <div class="col-span-10 md:col-span-4">
-                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark">Agentes de Voz</h3>
+                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark"><a href="agentes-de-voz.html" class="group-hover:text-accent transition-colors">Agentes de Voz</a></h3>
                                 <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">Atendimento Telefónico</span>
                             </div>
                             <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
@@ -665,7 +723,7 @@
                                 </div>
                             </div>
                             <div class="col-span-10 md:col-span-4">
-                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark">Redes Sociais</h3>
+                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark"><a href="redes-sociais.html" class="group-hover:text-accent transition-colors">Redes Sociais</a></h3>
                                 <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">Publicar & Responder</span>
                             </div>
                             <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
@@ -754,11 +812,10 @@
             
             <div class="max-w-5xl mx-auto px-6 relative z-10 flex flex-col items-center">
                 <div class="relative flex items-baseline justify-center mb-8 reveal">
-                    <span class="text-4xl md:text-5xl font-display font-medium text-dark tracking-tight">Absolut</span>
-                    <span class="text-4xl md:text-5xl font-display font-bold text-accent tracking-wide">AI</span>
+                    <span class="text-4xl md:text-5xl font-display font-bold text-dark tracking-tight">Mobizze</span>
                 </div>
                 
-                <h3 class="text-2xl md:text-3xl font-display font-bold text-center mb-4 text-dark reveal delay-100">A sua empresa com a AbsolutAI</h3>
+                <h3 class="text-2xl md:text-3xl font-display font-bold text-center mb-4 text-dark reveal delay-100">A sua empresa com a Mobizze</h3>
                 <p class="text-base text-slate-600 text-center mb-12 reveal delay-200">Tudo conectado. Tudo automatizado. O Seu Parceiro de <span class="font-bold text-accent">Transformação Tecnológica</span>.</p>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full reveal delay-300">
@@ -802,7 +859,7 @@
             <div class="max-w-5xl mx-auto">
                 <p class="text-sm font-mono tracking-[0.25em] uppercase mb-6 text-accent font-semibold reveal">O nosso método</p>
                 <h2 class="font-display font-bold text-dark tracking-tight reveal" style="font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.15;">
-                    Método <span class="text-accent">AbsolutAI</span>
+                    Método <span class="text-accent">Mobizze</span>
                 </h2>
                 
                 <div class="mt-16 space-y-0 border-t border-slate-200">
@@ -868,82 +925,77 @@
                 
                 <!-- Todos os Cartões com Links para contacto.html -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 reveal delay-100">
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-clinicas-saude.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Clínicas</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Triagem, agendamento e follow-up automático</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-imobiliarias.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Imobiliárias</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Qualifica leads e responde 24/7 a interessados</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-ecommerce.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">E-commerce</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Atendimento, upsell e suporte a devoluções</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-restaurantes.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Restaurantes</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Gestão de reservas e recolha de feedback</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-saloes-estetica.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12L12 12m8-8L8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8L20 20"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Salões & Estética</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Marcações automáticas e menos faltas</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-advogados.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M12 3v18m7-13l3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2a17 17 0 0 0 8 2h1M5 8l3 8a5 5 0 0 1-6 0zV7m2 14h10"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Advogados</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Triagem de casos e respostas a FAQs</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-ginasios.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829zM2.5 21.5l1.4-1.4M20.1 3.9l1.4-1.4M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829zM9.6 14.4l4.8-4.8"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Ginásios</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Inscrições e campanhas de retenção</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-construcao.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5m0-4a6 6 0 0 1 6 6v3M4 15v-3a6 6 0 0 1 6-6"/><rect width="20" height="4" x="2" y="15" rx="1"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Construção</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Orçamentos e follow-up de obras ativo</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-educacao.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Educação</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Matrículas e suporte a alunos simplificado</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-oficinas.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Oficinas</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Agenda revisões e envia alertas de carro</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8L4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1l3 2l2 3l1-1v-3l3-2l3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Turismo</div>
-                        <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Personaliza roteiros e gere reservas B2C</div>
-                    </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-contabilidade.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M10 18v-7m1.12-8.802a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949zM14 18v-7m4 7v-7M3 22h18M6 18v-7"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Contabilidade</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Processamento de documentos automático</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-industria.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Indústria</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Monitorização e cadeia de fornecedores</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-retalho.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Retalho</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Gere stock e atendimento automatizado</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-suporte-b2b.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Suporte (B2B)</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Resolução de tickets e escalonamento IA</div>
                     </a>
-                    <a href="contacto.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
+                    <a href="setor-agricultura.html" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8c0 5.5-4.78 10-10 10"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
                         <div class="text-sm font-display font-bold mb-1 text-dark">Agricultura</div>
                         <div class="hidden sm:block text-[11px] leading-relaxed text-slate-500 font-medium">Dados de campo e gestão de fornecedores</div>
@@ -951,7 +1003,7 @@
                 </div>
                 
                 <div class="mt-12 text-center reveal delay-200">
-                    <a href="contacto.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 bg-white border border-slate-200 text-slate-700 hover:border-accent hover:text-accent hover:shadow-sm">
+                    <a href="setores.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 bg-white border border-slate-200 text-slate-700 hover:border-accent hover:text-accent hover:shadow-sm">
                         Não encontra o seu setor? Fale connosco
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:translate-x-1"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
                     </a>
@@ -981,7 +1033,7 @@
                             Qual a diferença entre automação e IA? 
                             <span class="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-xl ml-4 font-normal">+</span>
                         </summary>
-                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">A automação segue regras fixas. A IA interpreta e adapta-se. Com a AbsolutAI, combinamos ambas para criar fluxos perfeitos e dinâmicos para a sua empresa.</div>
+                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">A automação segue regras fixas. A IA interpreta e adapta-se. Com a Mobizze, combinamos ambas para criar fluxos perfeitos e dinâmicos para a sua empresa.</div>
                     </details>
 
                     <details class="group border-b border-slate-200">
@@ -1005,7 +1057,7 @@
                             A IA vai substituir a minha equipa? 
                             <span class="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-xl ml-4 font-normal">+</span>
                         </summary>
-                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">Não. O objetivo da AbsolutAI é libertar os seus colaboradores de tarefas repetitivas e monótonas (como processar dados ou responder às mesmas perguntas dezenas de vezes). Assim, a sua equipa foca-se no trabalho estratégico, criativo e no relacionamento que gera mais valor.</div>
+                        <div class="pb-6 text-sm leading-relaxed text-slate-600 font-medium">Não. O objetivo da Mobizze é libertar os seus colaboradores de tarefas repetitivas e monótonas (como processar dados ou responder às mesmas perguntas dezenas de vezes). Assim, a sua equipa foca-se no trabalho estratégico, criativo e no relacionamento que gera mais valor.</div>
                     </details>
 
                     <details class="group border-b border-slate-200">
@@ -1062,7 +1114,7 @@
                         Agendar Diagnóstico
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
                     </a>
-                    <a href="mailto:contato@absolutai.com" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-bold transition-all duration-300 bg-white border-2 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50 shadow-sm">
+                    <a href="mailto:contato@mobizze.com" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-bold transition-all duration-300 bg-white border-2 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50 shadow-sm">
                         Enviar e-mail
                     </a>
                 </div>
@@ -1077,7 +1129,7 @@
                 <!-- Branding -->
                 <div class="col-span-2 md:col-span-4">
                     <div class="font-display font-bold text-xl tracking-tight text-dark mb-4">
-                        Absolut<span class="text-accent">AI</span>
+                        Mobizze
                     </div>
                     <p class="text-sm text-slate-500 leading-relaxed mb-6 max-w-xs font-medium">
                         Agência de Inteligência Artificial para empresas. Operamos em Portugal e no mundo, criando automações que trazem resultados.
@@ -1088,7 +1140,6 @@
                 <div class="col-span-1 md:col-span-2 md:col-start-7">
                     <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navegação</h3>
                     <ul class="space-y-3">
-                        <li><a href="#servicos" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Serviços</a></li>
                         <li><a href="sobre.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Sobre Nós</a></li>
                         <li><a href="financiamento.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Financiamento</a></li>
                         <li><a href="#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
@@ -1105,9 +1156,9 @@
                             </span>
                         </li>
                         <li>
-                            <a href="mailto:contato@absolutai.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
+                            <a href="mailto:contato@mobizze.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-                                contato@absolutai.com
+                                contato@mobizze.com
                             </a>
                         </li>
                     </ul>
@@ -1115,7 +1166,7 @@
             </div>
 
             <div class="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                <p class="text-xs text-slate-400 font-medium">&copy; 2026 <span class="font-display font-bold text-slate-600">AbsolutAI</span>. Todos os direitos reservados.</p>
+                <p class="text-xs text-slate-400 font-medium">&copy; 2026 <span class="font-display font-bold text-slate-600">Mobizze</span>. Todos os direitos reservados.</p>
                 <div class="flex gap-6">
                     <a href="privacidade.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Privacidade</a>
                     <a href="termos.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Termos</a>

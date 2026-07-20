@@ -64,17 +64,5 @@
       "destination": "/en",
       "permanent": false
     }
-  ],
-  "rewrites": [
-    { "source": "/pt/contacto", "destination": "/pt/contacto.html" },
-    { "source": "/pt/financiamento", "destination": "/pt/financiamento.html" },
-    { "source": "/pt/privacidade", "destination": "/pt/privacidade.html" },
-    { "source": "/pt/sobre", "destination": "/pt/sobre.html" },
-    { "source": "/pt/termos", "destination": "/pt/termos.html" },
-    { "source": "/en/about", "destination": "/en/about.html" },
-    { "source": "/en/contact", "destination": "/en/contact.html" },
-    { "source": "/en/financing", "destination": "/en/financing.html" },
-    { "source": "/en/privacy", "destination": "/en/privacy.html" },
-    { "source": "/en/terms", "destination": "/en/terms.html" }
   ]
 }

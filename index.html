@@ -5,6 +5,11 @@
     <title>Redirecting... | AbsolutAI</title>
     <meta name="description" content="Artificial intelligence agency. We create AI agents, automate processes, and give back up to 70% of your team's time.">
     
+    <!-- Favicon -->
+    <link rel="icon" href="https://absolutarget.com/wp-content/uploads/2025/04/cropped-Novo-Projeto-1-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://absolutarget.com/wp-content/uploads/2025/04/cropped-Novo-Projeto-1-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://absolutarget.com/wp-content/uploads/2025/04/cropped-Novo-Projeto-1-180x180.png">
+
     <!-- Fallback for browsers without JavaScript -->
     <noscript>
         <meta http-equiv="refresh" content="0;url=en/index.html">
@@ -12,15 +17,11 @@
     
     <script>
         (function() {
-            var languages = navigator.languages && navigator.languages.length
-                ? navigator.languages
-                : [navigator.language || navigator.userLanguage || 'en'];
-
-            var isPortuguese = languages.some(function(language) {
-                return String(language).toLowerCase().indexOf('pt') === 0;
-            });
-
-            var targetUrl = isPortuguese ? 'pt/' : 'en/';
+            // Get user's preferred language
+            var lang = navigator.language || navigator.userLanguage;
+            // Determine the target URL
+            var targetUrl = lang.toLowerCase().startsWith('pt') ? 'pt/index.html' : 'en/index.html';
+            // Redirect to the appropriate version
             window.location.replace(targetUrl);
         })();
     </script>
