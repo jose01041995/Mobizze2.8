@@ -10,38 +10,6 @@
     <link rel="icon" href="https://mobizze.com/wp-content/uploads/2020/06/favicon.ico">
     <link rel="apple-touch-icon" href="https://mobizze.com/wp-content/uploads/2020/06/favicon.ico">
 
-    <!-- Script de Deteção de Idioma e Redirecionamento -->
-    <script>
-        (function() {
-            var path = window.location.pathname;
-            var hash = window.location.hash;
-            
-            // Verifica se já estamos nas pastas /en/ ou /pt/ (ou no hash de preview) para evitar loop infinito
-            if (path.indexOf('/en/') === -1 && path.indexOf('/pt/') === -1 && hash.indexOf('/en/') === -1 && hash.indexOf('/pt/') === -1) {
-                // Vai buscar a linguagem preferida do utilizador
-                var lang = navigator.language || navigator.userLanguage;
-                
-                // Se começar por 'pt' (pt-PT, pt-BR, etc.), é português. Caso contrário, assume inglês como padrão global.
-                var isPt = lang.toLowerCase().startsWith('pt');
-                var targetFolder = isPt ? '/pt/' : '/en/';
-                
-                // --- INSTRUÇÕES PARA PRODUÇÃO ---
-                // No seu servidor real, descomente a linha abaixo para redirecionar fisicamente os utilizadores:
-                // window.location.replace(targetFolder);
-                
-                // --- CÓDIGO APENAS PARA DEMONSTRAÇÃO NESTE EDITOR ---
-                try {
-                    // Tenta mudar o URL visualmente sem causar um refresh na página (bom para Single Page Apps, mas limitado aqui)
-                    window.history.replaceState(null, '', targetFolder);
-                } catch (e) {
-                    // O ambiente de pré-visualização (sandbox) bloqueia a alteração do history.
-                    // Usamos a âncora (hash) para contornar isso visualmente sem causar erro 404
-                    window.location.hash = targetFolder;
-                    console.warn("Ambiente restrito bloqueou replaceState. A usar hash para visualização: " + targetFolder);
-                }
-            }
-        })();
-    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
