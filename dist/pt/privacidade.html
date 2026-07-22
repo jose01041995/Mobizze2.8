@@ -70,21 +70,22 @@
     <!-- Navigation -->
     <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
         <div class="flex items-center justify-between h-12">
-            <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
+            <a href="index.html" aria-label="Mobizze — Início" class="font-display font-bold text-lg tracking-tight text-dark">
                 Mobizze
             </a>
             <div class="hidden md:flex items-center gap-6 h-full">
                 <!-- Dropdown Serviços -->
                 <div class="relative group flex items-center h-full">
                     <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Serviços <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <!-- Hitbox Invisível e Menu -->
                     <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
                         <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
-                            <a href="chatbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Chatbot</a>
+                            <a href="agentes-conversacao.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Conversação</a>
                             <a href="emailbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbot</a>
                             <a href="qualificar-leads-crm.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Qualificar Leads CRM</a>
                             <a href="agendar-reunioes.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agendar Reuniões</a>
                             <a href="agentes-de-voz.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Voz</a>
-                            <a href="agentes-de-texto.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Texto</a>
+                            <a href="ferramentas-personalizadas.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Ferramentas Personalizadas</a>
                             <a href="redes-sociais.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Redes Sociais</a>
                         </div>
                     </div>
@@ -93,13 +94,12 @@
                 <!-- Dropdown Setores -->
                 <div class="relative group flex items-center h-full">
                     <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Setores <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <!-- Hitbox Invisível e Menu -->
                     <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-48 z-50">
                         <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
                             <a href="setor-clinicas-saude.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Clínicas & Saúde</a>
                             <a href="setor-imobiliarias.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Imobiliárias</a>
                             <a href="setor-ecommerce.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">E-commerce</a>
-                            <a href="setor-restaurantes.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Restaurantes</a>
-                            <a href="setor-saloes-estetica.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Salões & Estética</a>
                             <div class="h-px bg-slate-100 my-1 mx-2"></div>
                             <a href="setores.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors">Ver todos os setores &rarr;</a>
                         </div>
@@ -109,7 +109,10 @@
                 <a href="financiamento.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Financiamento</a>
                 <a href="index.html#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
             </div>
+            
+            <!-- Link para a página de contacto -->
             <a href="contacto.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-accent text-white hover:bg-blue-700 shadow-sm hover:shadow-md">Falar connosco</a>
+            
             <button id="mobile-menu-btn" class="md:hidden text-slate-600 focus:outline-none" aria-label="Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
             </button>
@@ -118,34 +121,41 @@
 
     <!-- Mobile Menu Fullscreen -->
     <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
+        <!-- Cabeçalho Menu Mobile -->
         <div class="flex items-center justify-between p-6 pb-4 border-b border-slate-100">
-            <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-xl tracking-tight text-dark">
+            <a href="index.html" aria-label="Mobizze — Início" class="font-display font-bold text-xl tracking-tight text-dark">
                 Mobizze
             </a>
             <button id="close-mobile-menu" class="text-slate-600 focus:outline-none p-2 -mr-2 hover:bg-slate-50 rounded-full transition-colors" aria-label="Fechar Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
         </div>
+
+        <!-- Links e Opções -->
         <div class="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8">
             <div>
                 <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Serviços</div>
                 <div class="flex flex-col gap-4">
-                    <a href="chatbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Chatbot</a>
+                    <a href="agentes-conversacao.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Conversação</a>
                     <a href="emailbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Emailbot</a>
                     <a href="qualificar-leads-crm.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Qualificar CRM</a>
                     <a href="agendar-reunioes.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agendar Reuniões</a>
                     <a href="agentes-de-voz.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Voz</a>
-                    <a href="agentes-de-texto.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Texto</a>
+                    <a href="ferramentas-personalizadas.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Ferramentas Personalizadas</a>
                     <a href="redes-sociais.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Redes Sociais</a>
                 </div>
             </div>
+            
             <div class="h-px w-full bg-slate-100"></div>
+            
             <div class="flex flex-col gap-5">
                 <a href="setores.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Setores</a>
                 <a href="sobre.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Sobre Nós</a>
                 <a href="financiamento.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Financiamento</a>
                 <a href="index.html#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
             </div>
+            
+            <!-- Link para a página de contacto -->
             <div class="mt-auto pt-6">
                 <a href="contacto.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-accent text-white hover:bg-blue-700 text-center shadow-md">Falar connosco</a>
             </div>
@@ -170,7 +180,7 @@
         <section class="relative px-6 py-16 bg-slate-50 border-y border-slate-200">
             <div class="max-w-3xl mx-auto legal-content">
                 <h3>1. Introdução</h3>
-                <p>A Mobizze ("nós", "nosso") compromete-se a proteger a sua privacidade. Esta Política de Privacidade explica como recolhemos, usamos, divulgamos e salvaguardamos as suas informações quando visita o nosso site [absolutai.com] e utiliza os nossos serviços.</p>
+                <p>A Mobizze ("nós", "nosso") compromete-se a proteger a sua privacidade. Esta Política de Privacidade explica como recolhemos, usamos, divulgamos e salvaguardamos as suas informações quando visita o nosso site mobizze.com e utiliza os nossos serviços.</p>
 
                 <h3>2. Dados que Recolhemos</h3>
                 <p>Podemos recolher informações sobre si de várias formas:</p>
@@ -196,13 +206,13 @@
                 <p>Utilizamos medidas de segurança administrativas, técnicas e físicas para ajudar a proteger as suas informações pessoais. No entanto, nenhum sistema de segurança é impenetrável e não podemos garantir a segurança absoluta das suas informações.</p>
 
                 <h3>6. Os Seus Direitos</h3>
-                <p>De acordo com o RGPD, tem o direito de aceder, retificar, apagar e limitar o processamento dos seus dados pessoais. Para exercer estes direitos, por favor contacte-nos através do e-mail contato@mobizze.com.</p>
+                <p>De acordo com o RGPD, tem o direito de aceder, retificar, apagar e limitar o processamento dos seus dados pessoais. Para exercer estes direitos, por favor contacte-nos através do e-mail contact@mobizze.com.</p>
 
                 <h3>7. Alterações a esta Política</h3>
                 <p>Reservamo-nos o direito de fazer alterações a esta Política de Privacidade a qualquer momento. Notificá-lo-emos sobre quaisquer alterações, atualizando a data da "Última atualização" desta política.</p>
 
                 <h3>8. Contacto</h3>
-                <p>Se tiver dúvidas ou comentários sobre esta Política de Privacidade, por favor contacte-nos em: <a href="mailto:contato@mobizze.com" class="text-accent font-semibold hover:underline">contato@mobizze.com</a>.</p>
+                <p>Se tiver dúvidas ou comentários sobre esta Política de Privacidade, por favor contacte-nos em: <a href="mailto:contact@mobizze.com" class="text-accent font-semibold hover:underline">contact@mobizze.com</a>.</p>
             </div>
         </section>
     </main>
@@ -233,13 +243,13 @@
                         <li>
                             <span class="text-sm text-slate-500 font-medium flex items-start gap-2">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent mt-0.5"><path d="M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                Portugal · Mundo
+                                Portugal · Worldwide
                             </span>
                         </li>
                         <li>
-                            <a href="mailto:contato@mobizze.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
+                            <a href="mailto:contact@mobizze.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-                                contato@mobizze.com
+                                contact@mobizze.com
                             </a>
                         </li>
                     </ul>
@@ -260,6 +270,7 @@
             </div>
         </div>
     </footer>
+    <script src="./test.js"></script>
 
     <!-- Scripts -->
     <script>

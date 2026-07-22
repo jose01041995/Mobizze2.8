@@ -86,7 +86,7 @@
     <!-- Navigation -->
     <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
         <div class="flex items-center justify-between h-12">
-            <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
+            <a href="index.html" aria-label="Mobizze — Início" class="font-display font-bold text-lg tracking-tight text-dark">
                 Mobizze
             </a>
             <div class="hidden md:flex items-center gap-6 h-full">
@@ -96,12 +96,12 @@
                     <!-- Hitbox Invisível e Menu -->
                     <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
                         <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
-                            <a href="chatbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Chatbot</a>
+                            <a href="agentes-conversacao.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Conversação</a>
                             <a href="emailbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbot</a>
                             <a href="qualificar-leads-crm.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Qualificar Leads CRM</a>
                             <a href="agendar-reunioes.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agendar Reuniões</a>
                             <a href="agentes-de-voz.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Voz</a>
-                            <a href="agentes-de-texto.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Texto</a>
+                            <a href="ferramentas-personalizadas.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Ferramentas Personalizadas</a>
                             <a href="redes-sociais.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Redes Sociais</a>
                         </div>
                     </div>
@@ -126,8 +126,8 @@
                 <a href="index.html#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
             </div>
             
-            <!-- Link para a página de contacto (Exatamente igual ao index) -->
-            <a href="contacto.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-accent text-white hover:bg-blue-700 shadow-sm hover:shadow-md">Falar connosco</a>
+            <!-- Link para a página de contacto -->
+            <a href="index.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-slate-100 text-slate-700 hover:bg-slate-200 shadow-sm hover:shadow-md">Voltar ao Início</a>
             
             <button id="mobile-menu-btn" class="md:hidden text-slate-600 focus:outline-none" aria-label="Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
@@ -139,7 +139,7 @@
     <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
         <!-- Cabeçalho Menu Mobile -->
         <div class="flex items-center justify-between p-6 pb-4 border-b border-slate-100">
-            <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-xl tracking-tight text-dark">
+            <a href="index.html" aria-label="Mobizze — Início" class="font-display font-bold text-xl tracking-tight text-dark">
                 Mobizze
             </a>
             <button id="close-mobile-menu" class="text-slate-600 focus:outline-none p-2 -mr-2 hover:bg-slate-50 rounded-full transition-colors" aria-label="Fechar Menu">
@@ -152,12 +152,12 @@
             <div>
                 <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Serviços</div>
                 <div class="flex flex-col gap-4">
-                    <a href="chatbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Chatbot</a>
+                    <a href="agentes-conversacao.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Conversação</a>
                     <a href="emailbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Emailbot</a>
                     <a href="qualificar-leads-crm.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Qualificar CRM</a>
                     <a href="agendar-reunioes.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agendar Reuniões</a>
                     <a href="agentes-de-voz.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Voz</a>
-                    <a href="agentes-de-texto.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Texto</a>
+                    <a href="ferramentas-personalizadas.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Ferramentas Personalizadas</a>
                     <a href="redes-sociais.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Redes Sociais</a>
                 </div>
             </div>
@@ -171,9 +171,9 @@
                 <a href="index.html#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
             </div>
             
-            <!-- Link para a página de contacto (Exatamente igual ao index) -->
+            <!-- Link para a página de contacto -->
             <div class="mt-auto pt-6">
-                <a href="contacto.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-accent text-white hover:bg-blue-700 text-center shadow-md">Falar connosco</a>
+                <a href="index.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-slate-100 text-slate-800 hover:bg-slate-200 text-center shadow-md">Voltar ao Início</a>
             </div>
         </div>
     </div>
@@ -230,7 +230,7 @@
                         
                         <div class="mt-12 pt-8 border-t border-slate-200">
                             <p class="text-sm text-slate-500 font-medium">
-                                Prefere enviar um e-mail diretamente? Envie para <a href="mailto:contato@mobizze.com" class="font-semibold text-accent hover:underline">contato@mobizze.com</a>.
+                                Prefere enviar um e-mail diretamente? Envie para <a href="mailto:contact@mobizze.com" class="font-semibold text-accent hover:underline">contact@mobizze.com</a>.
                             </p>
                         </div>
                     </div>
@@ -293,11 +293,11 @@
                                 </div>
 
                                 <button type="submit" class="mt-4 w-full flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-sm font-bold transition-all duration-300 bg-accent text-white shadow-lg shadow-blue-500/30 hover:bg-blue-700 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-blue-500/40">
-                                    Pedir Agendamento de Diagnóstico
+                                    Pedir diagnóstico gratuito
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
                                 </button>
                                 
-                                <p class="text-xs text-center text-slate-400 mt-2">Os seus dados estão seguros connosco. Prometemos não enviar spam.</p>
+                                <p class="text-xs text-center text-slate-400 mt-2">Ao enviar este formulário, aceita que a Mobizze trate os seus dados para responder ao pedido, de acordo com a <a href="privacidade.html" class="underline hover:text-slate-600">Política de Privacidade</a>.</p>
                             </form>
                         </div>
                     </div>
@@ -337,13 +337,13 @@
                         <li>
                             <span class="text-sm text-slate-500 font-medium flex items-start gap-2">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent mt-0.5"><path d="M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                Portugal · Mundo
+                                Portugal · Worldwide
                             </span>
                         </li>
                         <li>
-                            <a href="mailto:contato@mobizze.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
+                            <a href="mailto:contact@mobizze.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-                                contato@mobizze.com
+                                contact@mobizze.com
                             </a>
                         </li>
                     </ul>
@@ -365,6 +365,7 @@
             </div>
         </div>
     </footer>
+    <script src="./test.js"></script>
 
     <!-- Scripts -->
     <script>

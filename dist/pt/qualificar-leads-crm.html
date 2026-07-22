@@ -68,13 +68,14 @@
     <!-- Navigation -->
     <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
         <div class="flex items-center justify-between h-12">
-            <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
+            <a href="index.html" aria-label="Mobizze — Início" class="font-display font-bold text-lg tracking-tight text-dark">
                 Mobizze
             </a>
             <div class="hidden md:flex items-center gap-6 h-full">
                 <!-- Dropdown Serviços -->
                 <div class="relative group flex items-center h-full">
                     <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Serviços <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <!-- Hitbox Invisível e Menu -->
                     <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
                         <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
                             <a href="chatbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Chatbot</a>
@@ -91,6 +92,7 @@
                 <!-- Dropdown Setores -->
                 <div class="relative group flex items-center h-full">
                     <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Setores <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <!-- Hitbox Invisível e Menu -->
                     <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-48 z-50">
                         <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
                             <a href="setor-clinicas-saude.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Clínicas & Saúde</a>
@@ -105,7 +107,9 @@
                 <a href="financiamento.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Financiamento</a>
                 <a href="index.html#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
             </div>
+            
             <a href="contacto.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-accent text-white hover:bg-blue-700 shadow-sm hover:shadow-md">Falar connosco</a>
+            
             <button id="mobile-menu-btn" class="md:hidden text-slate-600 focus:outline-none" aria-label="Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
             </button>
@@ -115,7 +119,7 @@
     <!-- Mobile Menu Fullscreen -->
     <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
         <div class="flex items-center justify-between p-6 pb-4 border-b border-slate-100">
-            <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-xl tracking-tight text-dark">
+            <a href="index.html" aria-label="Mobizze — Início" class="font-display font-bold text-xl tracking-tight text-dark">
                 Mobizze
             </a>
             <button id="close-mobile-menu" class="text-slate-600 focus:outline-none p-2 -mr-2 hover:bg-slate-50 rounded-full transition-colors" aria-label="Fechar Menu">
@@ -157,10 +161,10 @@
                 <div class="text-center">
                     <h1 class="text-xs font-mono tracking-[0.2em] uppercase mb-4 text-accent animate-fade-in-up">Os Nossos Serviços</h1>
                     <h2 class="font-display font-bold text-dark leading-[1.1] tracking-tight mb-6 animate-fade-in-up delay-100" style="font-size: clamp(2.5rem, 5vw, 4rem);">
-                        IA que Qualifica Leads no seu <span class="text-accent">CRM</span>.
+                        IA que Qualifica Leads no Seu <span class="text-accent">CRM</span>.
                     </h2>
                     <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto animate-fade-in-up delay-200">
-                        Pare de desperdiçar o tempo dos vendedores com leads não qualificadas. Os nossos agentes de IA trabalham dentro do seu CRM para pontuar, enriquecer e encaminhar oportunidades automaticamente.
+                        Deixe de desperdiçar o tempo dos seus vendedores com leads não qualificadas. Os nossos agentes de IA trabalham dentro do seu CRM para pontuar, enriquecer e encaminhar oportunidades automaticamente.
                     </p>
                 </div>
             </div>
@@ -169,7 +173,7 @@
         <!-- Benefits Section -->
         <section class="relative px-6 py-24 bg-slate-50 border-y border-slate-200">
             <div class="max-w-5xl mx-auto">
-                <h2 class="text-3xl font-display font-bold text-dark tracking-tight text-center mb-16 reveal">Mais do que um Workflow. Um <span class="text-accent">Guardião Inteligente</span>.</h2>
+                <h2 class="text-3xl font-display font-bold text-dark tracking-tight text-center mb-16 reveal">Mais do que um Workflow. Um <span class="text-accent">Um motor inteligente de qualificação comercial</span>.</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Benefit 1 -->
                     <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal">
@@ -177,7 +181,7 @@
                             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                         </div>
                         <h4 class="font-display font-bold text-dark text-lg">Pontuação de Leads 24/7</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">A IA analisa novas leads assim que chegam, pontuando-as com base nos seus critérios (ex: tamanho da empresa, setor, orçamento).</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">A IA analisa novas leads à medida que chegam, pontuando-as com base nos seus critérios personalizados (ex: dimensão da empresa, setor, orçamento).</p>
                     </div>
                     <!-- Benefit 2 -->
                     <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-100">
@@ -285,13 +289,13 @@
                         <li>
                             <span class="text-sm text-slate-500 font-medium flex items-start gap-2">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent mt-0.5"><path d="M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                Portugal · Mundo
+                                Portugal · Worldwide
                             </span>
                         </li>
                         <li>
-                            <a href="mailto:contato@mobizze.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
+                            <a href="mailto:contact@mobizze.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-                                contato@mobizze.com
+                                contact@mobizze.com
                             </a>
                         </li>
                     </ul>
@@ -312,6 +316,7 @@
             </div>
         </div>
     </footer>
+    <script src="./test.js"></script>
 
     <!-- Scripts -->
     <script>

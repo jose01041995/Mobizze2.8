@@ -146,10 +146,10 @@
 </head>
 <body class="font-sans antialiased bg-base text-dark">
 
-    <!-- Navigation -->
+                <!-- Navigation -->
     <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
         <div class="flex items-center justify-between h-12">
-            <a href="#" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
+            <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
                 Mobizze
             </a>
             <div class="hidden md:flex items-center gap-6 h-full">
@@ -157,15 +157,30 @@
                 <div class="relative group flex items-center h-full">
                     <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Serviços <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
                     <!-- Hitbox Invisível e Menu -->
-                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
-                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
-                            <a href="chatbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Chatbot</a>
-                            <a href="emailbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbot</a>
-                            <a href="qualificar-leads-crm.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Qualificar Leads CRM</a>
-                            <a href="agendar-reunioes.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agendar Reuniões</a>
-                            <a href="agentes-de-voz.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Voz</a>
-                            <a href="agentes-de-texto.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Texto</a>
-                            <a href="redes-sociais.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Redes Sociais</a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[400px] z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-4 grid grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Agentes de IA</h4>
+                                <a href="agentes-conversacao.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Conversação</a>
+                                <a href="agentes-de-voz.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Voz</a>
+                                <a href="emailbot.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbots</a>
+                            </div>
+                            <div>
+                                <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Automação de Processos</h4>
+                                <a href="qualificar-leads-crm.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Vendas e CRM</a>
+                                <a href="agendar-reunioes.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agendar Reuniões</a>
+                                <a href="redes-sociais.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Redes Sociais</a>
+                            </div>
+                            <div class="col-span-2 border-t border-slate-100 pt-3 mt-1 grid grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Desenvolvimento</h4>
+                                    <a href="ferramentas-personalizadas.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Ferramentas Personalizadas</a>
+                                </div>
+                                <div>
+                                    <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Sistemas</h4>
+                                    <a href="integracoes.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Integrações e Dados</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -185,8 +200,8 @@
                     </div>
                 </div>
                 <a href="sobre.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Sobre Nós</a>
-                <a href="financiamento.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Financiamento</a>
-                <a href="#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
+                <a href="planos-implementacao.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Planos Flexíveis</a>
+                <a href="index.html#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
             </div>
             
             <!-- Link para a página de contacto -->
@@ -215,12 +230,12 @@
             <div>
                 <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Serviços</div>
                 <div class="flex flex-col gap-4">
-                    <a href="chatbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Chatbot</a>
+                    <a href="agentes-conversacao.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Conversação</a>
                     <a href="emailbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Emailbot</a>
                     <a href="qualificar-leads-crm.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Qualificar CRM</a>
                     <a href="agendar-reunioes.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agendar Reuniões</a>
                     <a href="agentes-de-voz.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Voz</a>
-                    <a href="agentes-de-texto.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Texto</a>
+                    <a href="ferramentas-personalizadas.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Ferramentas Personalizadas</a>
                     <a href="redes-sociais.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Redes Sociais</a>
                 </div>
             </div>
@@ -230,7 +245,7 @@
             <div class="flex flex-col gap-5">
                 <a href="setores.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Setores</a>
                 <a href="sobre.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Sobre Nós</a>
-                <a href="financiamento.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Financiamento</a>
+                <a href="planos-implementacao.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Planos Flexíveis</a>
                 <a href="#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
             </div>
             
@@ -250,26 +265,26 @@
             <div class="absolute inset-0 pointer-events-none z-10" style="background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(255,255,255,1) 90%);"></div>
             
             <div class="relative z-20 flex flex-col items-center justify-center px-6 py-24 text-center max-w-4xl mx-auto w-full">
-                <h1 class="text-xs font-mono tracking-[0.2em] uppercase mb-6 text-accent animate-fade-in-up">Operamos em Portugal e no Mundo</h1>
+                <h1 class="text-xs font-mono tracking-[0.2em] uppercase mb-6 text-accent animate-fade-in-up">Acelere o seu negócio com IA</h1>
                 
                 <h2 class="font-display font-bold text-dark leading-[1.08] tracking-tight animate-fade-in-up delay-100" style="font-size:clamp(2.2rem, 5.5vw, 5rem);">
-                    Recupere Até 70% do Tempo da Sua Equipa <span class="text-accent">Com IA e Automação</span>
+                    Transformamos problemas empresariais em sistemas de IA personalizados.
                 </h2>
                 
                 <p class="max-w-xl mt-6 text-base md:text-lg text-slate-600 leading-relaxed animate-fade-in-up delay-200">
-                    Criamos agentes de IA, automatizamos processos e devolvemos horas à sua equipa — para decisões que fazem a diferença.
+                    Criamos agentes, automações e ferramentas que se integram nos seus processos para reduzir custos, recuperar tempo e acelerar o crescimento.
                 </p>
                 
                 <div class="mt-10 animate-fade-in-up delay-300">
                     <div class="flex flex-col sm:flex-row items-center gap-4 justify-center">
                         <!-- Link para a página de contacto -->
                         <a href="contacto.html" class="inline-flex items-center justify-center gap-3 px-7 py-3.5 rounded-full text-sm font-semibold transition-all duration-300 bg-accent text-white shadow-[0_4px_20px_rgba(37,99,235,0.3)] hover:shadow-[0_6px_25px_rgba(37,99,235,0.4)] hover:-translate-y-0.5">
-                            <span class="hidden sm:inline">Diagnóstico gratuito — Ver quanto posso poupar</span>
+                            <span class="hidden sm:inline">Descobrir oportunidades no meu negócio</span>
                             <span class="sm:hidden">Diagnóstico gratuito</span>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                         </a>
-                        <a href="#problema" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium transition-all duration-300 bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300 shadow-sm">
-                            Descobrir mais
+                        <a href="casos-estudo.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium transition-all duration-300 bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300 shadow-sm">
+                            Ver casos reais
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3L8 13M8 13L4 9M8 13L12 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                         </a>
                     </div>
@@ -304,6 +319,9 @@
                     <div class="text-xs md:text-sm text-slate-500 mt-2 font-medium">Taxa de Satisfação</div>
                 </div>
             </div>
+            <div class="text-center mt-6 text-[10px] text-slate-400 max-w-2xl mx-auto px-4">
+                Dados agregados de projetos implementados entre 2024 e 2026. Resultados variam consoante os processos, volume e sistemas de cada empresa.
+            </div>
         </div>
 
         <!-- Clients Section -->
@@ -314,7 +332,7 @@
                 </h2>
                 <!-- NOTA: Os caminhos dos logótipos estão definidos para os respetivos websites. Classes ajustadas para melhor consistência de tamanho. -->
                 <div class="mx-auto mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-4 reveal delay-100">
-                    <img class="col-span-1 max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" src="https://portugalshoes.com/assets/imgs/logoshoes.png" alt="Portugal Shoes">
+                    <img class="col-span-1 max-h-12 w-auto max-w-36 object-contain grayscale hover:grayscale-0 transition-all duration-300" src="https://portugalshoes.com/assets/imgs/logoshoes.png" alt="Portugal Shoes">
                     <img class="col-span-1 max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" src="https://portugaltextile.com/wp-content/uploads/2023/05/cropped-slogan_update-1-ai4.png" alt="Portugal Textile">
                     <img class="col-span-1 max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" src="https://pneusjosilex.pt/wp-content/uploads/2017/12/Josilex_Logo-01-1.fw_.png" alt="Josilex">
                     <img class="col-span-1 max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" src="https://www.diferentefeito.com/wp-content/uploads/2017/04/Logotipo.png" alt="DiferenteFeito">
@@ -579,7 +597,7 @@
                     </div>
                     
                     <div class="flex flex-col justify-center reveal delay-200">
-                        <p class="text-base md:text-lg leading-relaxed text-slate-600">Enquanto a sua equipa faz isto manualmente, a concorrência já automatizou.</p>
+                        <p class="text-base md:text-lg leading-relaxed text-slate-600">Enquanto a sua equipa faz isto manualmente, cada vez mais empresas estão a automatizar estes processos.</p>
                         <p class="text-base md:text-lg leading-relaxed mt-4 font-semibold text-dark">Cada semana que passa é tempo — e dinheiro — perdido.</p>
                         
                         <div class="mt-8">
@@ -603,10 +621,10 @@
                 <h2 class="mb-6 max-w-3xl font-display font-bold text-dark tracking-tight reveal" style="font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.15;">
                     Agentes e Automações <span class="text-accent">Sob Medida</span>
                 </h2>
-                <p class="text-base md:text-lg mb-16 max-w-xl text-slate-600 leading-relaxed reveal">Soluções diretas que integram nos seus processos atuais e funcionam desde o primeiro dia.</p>
+                <p class="text-base md:text-lg mb-16 max-w-xl text-slate-600 leading-relaxed reveal">Soluções diretas que integram nos seus processos atuais e integra-se progressivamente nos processos existentes.</p>
                 
                 <div class="border-t border-slate-200 reveal">
-                    <!-- Chatbot & Agentes de Texto -->
+                    <!-- Agentes de Conversação & Ferramentas Personalizadas -->
                     <div class="service-row group relative py-8 md:py-10 transition-colors duration-300 border-b border-slate-200">
                         <div class="grid grid-cols-12 gap-4 md:gap-6 items-start px-4 md:px-6">
                             <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-3">
@@ -616,7 +634,7 @@
                                 </div>
                             </div>
                             <div class="col-span-10 md:col-span-4">
-                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark"><a href="agentes-de-texto.html" class="group-hover:text-accent transition-colors">Chatbots & Agentes de Texto</a></h3>
+                                <h3 class="text-lg md:text-xl font-display font-bold mb-1 text-dark"><a href="ferramentas-personalizadas.html" class="group-hover:text-accent transition-colors">Agentes de Conversaçãos & Ferramentas Personalizadas</a></h3>
                                 <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">WhatsApp, Site & SMS</span>
                             </div>
                             <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
@@ -639,7 +657,7 @@
                                 <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">Gestão de Inbox</span>
                             </div>
                             <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
-                                <p class="text-sm leading-relaxed text-slate-600">Automação inteligente da sua caixa de correio. A IA lê, categoriza, encaminha para a pessoa certa e, em muitos casos, redige e envia a resposta perfeita autonomamente.</p>
+                                <p class="text-sm leading-relaxed text-slate-600">Automação inteligente da sua caixa de correio. A IA lê, categoriza, encaminha para a pessoa certa e, em muitos casos, redige e envia a prepara respostas consistentes com as regras definidas.</p>
                             </div>
                         </div>
                     </div>
@@ -696,7 +714,7 @@
                                 <span class="text-xs font-mono tracking-wider uppercase text-accent font-medium">Atendimento Telefónico</span>
                             </div>
                             <div class="col-span-12 md:col-span-7 mt-2 md:mt-0">
-                                <p class="text-sm leading-relaxed text-slate-600">Sistemas telefónicos com voz humanizada e sem latência. Atendem clientes, respondem a perguntas e efetuam ações em tempo real por telefone.</p>
+                                <p class="text-sm leading-relaxed text-slate-600">Sistemas telefónicos com voz humanizada e baixa latência. Atendem clientes, respondem a perguntas e efetuam ações em tempo real por telefone.</p>
                             </div>
                         </div>
                     </div>
@@ -794,7 +812,7 @@
             </div>
         </section>
 
-        <!-- AbsolutAI Connection Visual -->
+        <!-- Mobizze Connection Visual -->
         <section class="relative bg-slate-50 py-24 border-y border-slate-200 overflow-hidden">
             <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(circle at 50% 50%, rgba(37,99,235,0.03) 0%, transparent 60%);"></div>
             
@@ -895,7 +913,7 @@
                             <h3 class="text-xl md:text-2xl font-display font-bold text-dark">Escalar</h3>
                         </div>
                         <div class="col-span-12 md:col-span-8 md:col-start-5">
-                            <p class="text-base leading-relaxed text-slate-600">Monitorizamos resultados, ajustamos e expandimos as integrações. O ROI cresce mês após mês.</p>
+                            <p class="text-base leading-relaxed text-slate-600">Monitorizamos resultados, ajustamos e expandimos as integrações. acompanhamos os resultados e identificamos novas oportunidades de melhoria.</p>
                         </div>
                     </div>
                 </div>
@@ -1102,7 +1120,7 @@
                         Agendar Diagnóstico
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
                     </a>
-                    <a href="mailto:contato@mobizze.com" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-bold transition-all duration-300 bg-white border-2 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50 shadow-sm">
+                    <a href="mailto:contact@mobizze.com" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-bold transition-all duration-300 bg-white border-2 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50 shadow-sm">
                         Enviar e-mail
                     </a>
                 </div>
@@ -1110,7 +1128,7 @@
         </section>
     </main>
 
-    <!-- Footer -->
+            <!-- Footer -->
     <footer class="relative border-t border-slate-200 bg-white overflow-hidden">
         <div class="relative max-w-6xl mx-auto px-6 pt-16 pb-8">
             <div class="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8 mb-12">
@@ -1120,7 +1138,7 @@
                         Mobizze
                     </div>
                     <p class="text-sm text-slate-500 leading-relaxed mb-6 max-w-xs font-medium">
-                        Agência de Inteligência Artificial para empresas. Operamos em Portugal e no mundo, criando automações que trazem resultados.
+                        Sistemas de IA personalizados para empresas. Operamos em Portugal e no Mundo, criando automações que reduzem custos e aceleram o crescimento.
                     </p>
                 </div>
 
@@ -1129,8 +1147,9 @@
                     <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navegação</h3>
                     <ul class="space-y-3">
                         <li><a href="sobre.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Sobre Nós</a></li>
-                        <li><a href="financiamento.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Financiamento</a></li>
-                        <li><a href="#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
+                        <li><a href="planos-flexiveis.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Planos Flexíveis</a></li>
+                        <li><a href="casos-estudo.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Casos de Estudo</a></li>
+                        <li><a href="index.html#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
                     </ul>
                 </div>
 
@@ -1144,9 +1163,9 @@
                             </span>
                         </li>
                         <li>
-                            <a href="mailto:contato@mobizze.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
+                            <a href="mailto:contact@mobizze.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-                                contato@mobizze.com
+                                contact@mobizze.com
                             </a>
                         </li>
                     </ul>
@@ -1158,6 +1177,7 @@
                 <div class="flex gap-6">
                     <a href="privacidade.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Privacidade</a>
                     <a href="termos.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Termos</a>
+                    <a href="seguranca.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Segurança</a>
                     <div class="h-4 w-px bg-slate-200"></div>
                     <div class="flex items-center gap-2 text-xs font-bold">
                         <a href="index.html" class="text-accent">PT</a>
@@ -1168,7 +1188,7 @@
             </div>
         </div>
     </footer>
-
+<script src="./test.js"></script>
     <!-- Scripts -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -1271,6 +1291,9 @@
                 }
             });
         });
+
+
+        
     </script>
 </body>
 </html>

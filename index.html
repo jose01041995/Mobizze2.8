@@ -11,21 +11,17 @@
 
     <!-- Fallback for browsers without JavaScript -->
     <noscript>
-        <meta http-equiv="refresh" content="0;url=en/index.html">
+        <meta http-equiv="refresh" content="0;url=/pt/">
     </noscript>
     
     <script>
         (function() {
-            // Get user's preferred language
-            var lang = navigator.language || navigator.userLanguage;
-            // Determine the target URL
-            var targetUrl = lang.toLowerCase().startsWith('pt') ? 'pt/index.html' : 'en/index.html';
-            // Redirect to the appropriate version
-            window.location.replace(targetUrl);
+            // Unconditionally redirect to Portuguese per user instructions
+            window.location.replace('/pt/');
         })();
     </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, please <a href="en/index.html">click here for English</a> or <a href="pt/index.html">clique aqui para Português</a>.</p>
+    <p>If you are not redirected automatically, please <a href="/en/">click here for English</a> or <a href="/pt/">clique aqui para Português</a>.</p>
 </body>
 </html>
