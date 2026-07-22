@@ -21,8 +21,7 @@ PT_FOOTER_TEMPLATE = """    <!-- Footer -->
                     <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navegação</h3>
                     <ul class="space-y-3">
                         <li><a href="sobre.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Sobre Nós</a></li>
-                        <li><a href="planos-flexiveis.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Planos Flexíveis</a></li>
-                        <li><a href="casos-estudo.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Casos de Estudo</a></li>
+                        <li><a href="planos-implementacao.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Planos Flexíveis</a></li>
                         <li><a href="index.html#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
                     </ul>
                 </div>
@@ -82,8 +81,7 @@ EN_FOOTER_TEMPLATE = """    <!-- Footer -->
                     <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navigation</h3>
                     <ul class="space-y-3">
                         <li><a href="about.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">About Us</a></li>
-                        <li><a href="flexible-plans.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Flexible Plans</a></li>
-                        <li><a href="case-studies.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Case Studies</a></li>
+                        <li><a href="flexible-implementation-plans.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Flexible Plans</a></li>
                         <li><a href="index.html#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
                     </ul>
                 </div>
@@ -143,7 +141,7 @@ def update_footers():
         'termos.html': 'terms.html',
         'seguranca.html': 'security.html',
         'ferramentas-personalizadas.html': 'custom-tools.html',
-        'planos-flexiveis.html': 'flexible-plans.html',
+        'planos-implementacao.html': 'flexible-implementation-plans.html',
         'casos-estudo.html': 'case-studies.html',
         'caso-estudo-portugal-textile.html': 'case-study-portugal-textile.html',
         'integracoes.html': 'integrations.html',

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soluções de IA para Todos os Setores | Mobizze</title>
-    <meta name="description" content="Descubra como as soluções de inteligência artificial personalizadas da Mobizze podem ser aplicadas ao seu setor, da saúde e imobiliário ao e-commerce e indústria.">
+    <title>Integrações e Dados para Sistemas | Mobizze</title>
+    <meta name="description" content="Conectamos os seus sistemas existentes – CRM, ERP, bases de dados e APIs – para automatizar fluxos de trabalho, eliminar duplicação de dados e acelerar a sua operação.">
     
     <!-- Favicon -->
     <link rel="icon" href="https://mobizze.com/wp-content/uploads/2020/06/favicon.ico">
@@ -47,7 +47,7 @@
         }
     </script>
     <style>
-        body { background-color: #f8fafc; color: #0f172a; }
+        body { background-color: #f8fafc; color: #0f172a; } /* Light gray background */
         .glass-nav {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(16px);
@@ -55,15 +55,18 @@
             border: 1px solid rgba(0, 0, 0, 0.05);
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
         }
-        .sector-card:hover { border-color: #93c5fd; background-color: #eff6ff; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08); }
+        
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
     </style>
 </head>
 <body class="font-sans antialiased bg-base text-dark">
 
-                <!-- Navigation -->
-    <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
+                    <!-- Navigation -->
+        <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
         <div class="flex items-center justify-between h-12">
             <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
                 Mobizze
@@ -130,10 +133,10 @@
     </nav>
 
     <!-- Mobile Menu Fullscreen -->
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
+                <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
         <!-- Cabeçalho Menu Mobile -->
         <div class="flex items-center justify-between p-6 pb-4 border-b border-slate-100">
-            <a href="#" aria-label="Mobizze — Home" class="font-display font-bold text-xl tracking-tight text-dark">
+            <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-xl tracking-tight text-dark">
                 Mobizze
             </a>
             <button id="close-mobile-menu" class="text-slate-600 focus:outline-none p-2 -mr-2 hover:bg-slate-50 rounded-full transition-colors" aria-label="Fechar Menu">
@@ -152,6 +155,7 @@
                     <a href="agendar-reunioes.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agendar Reuniões</a>
                     <a href="agentes-de-voz.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Voz</a>
                     <a href="ferramentas-personalizadas.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Ferramentas Personalizadas</a>
+                    <a href="integracoes.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Integrações e Dados</a>
                     <a href="redes-sociais.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Redes Sociais</a>
                 </div>
             </div>
@@ -162,7 +166,7 @@
                 <a href="setores.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Setores</a>
                 <a href="sobre.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Sobre Nós</a>
                 <a href="planos-implementacao.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Planos Flexíveis</a>
-                <a href="#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
+                <a href="index.html#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
             </div>
             
             <!-- Link para a página de contacto -->
@@ -179,108 +183,111 @@
             
             <div class="max-w-4xl mx-auto px-6 w-full relative z-10">
                 <div class="text-center">
-                    <h1 class="text-xs font-mono tracking-[0.2em] uppercase mb-4 text-accent animate-fade-in-up">Os Nossos Setores</h1>
-                    <h2 class="font-display font-bold text-dark leading-[1.1] tracking-tight mb-6 animate-fade-in-up" style="font-size: clamp(2.5rem, 5vw, 4rem);">
-                        Inteligência Artificial Para <span class="text-accent">Qualquer Indústria</span>
+                    <h1 class="text-xs font-mono tracking-[0.2em] uppercase mb-4 text-accent animate-fade-in-up">Sistemas</h1>
+                    <h2 class="font-display font-bold text-dark leading-[1.1] tracking-tight mb-6 animate-fade-in-up delay-100" style="font-size: clamp(2.5rem, 5vw, 4rem);">
+                        Conecte as suas <span class="text-accent">Ferramentas</span>. Unifique os seus <span class="text-accent">Dados</span>.
                     </h2>
-                    <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto animate-fade-in-up">
-                        Independentemente da indústria, a IA adapta-se ao seu contexto. Explore como já ajudámos empresas em vários setores e descubra o que podemos fazer pelo seu.
+                    <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto animate-fade-in-up delay-200">
+                        Eliminamos os silos de informação. Integramos CRMs, ERPs e aplicações isoladas para criar fluxos de trabalho contínuos e automatizados.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Sectors Grid -->
-        <section id="setores" class="relative px-6 py-24 bg-slate-50 border-y border-slate-200">
+        <!-- Benefits Section -->
+        <section class="relative px-6 py-24 bg-slate-50 border-y border-slate-200">
             <div class="max-w-5xl mx-auto">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 reveal">
-                    <a href="setor-clinicas-saude.html" id="clinicas-saude" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Clínicas & Saúde</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Triagem, agendamento e follow-up automático.</p>
-                    </a>
-                    <a href="setor-imobiliarias.html" id="imobiliarias" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Imobiliárias</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Qualifica leads e responde 24/7 a interessados.</p>
-                    </a>
-                    <a href="setor-ecommerce.html" id="ecommerce" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">E-commerce</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Atendimento, upsell e suporte a devoluções.</p>
-                    </a>
-                    <a href="setor-restaurantes.html" id="restaurantes" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Restaurantes</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Gestão de reservas e recolha de feedback.</p>
-                    </a>
-                    <a href="setor-saloes-estetica.html" id="saloes-estetica" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12L12 12m8-8L8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8L20 20"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Salões & Estética</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Marcações automáticas e menos faltas.</p>
-                    </a>
-                    <a href="setor-advogados.html" id="advogados" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M12 3v18m7-13l3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2a17 17 0 0 0 8 2h1M5 8l3 8a5 5 0 0 1-6 0zV7m2 14h10"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Advogados</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Triagem de casos e respostas a FAQs.</p>
-                    </a>
-                    <a href="setor-ginasios.html" id="ginasios" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829zM2.5 21.5l1.4-1.4M20.1 3.9l1.4-1.4M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829zM9.6 14.4l4.8-4.8"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Ginásios</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Inscrições e campanhas de retenção.</p>
-                    </a>
-                    <a href="setor-construcao.html" id="construcao" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5m0-4a6 6 0 0 1 6 6v3M4 15v-3a6 6 0 0 1 6-6"/><rect width="20" height="4" x="2" y="15" rx="1"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Construção</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Orçamentos e follow-up de obras ativo.</p>
-                    </a>
-                    <a href="setor-educacao.html" id="educacao" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Educação</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Matrículas e suporte a alunos simplificado.</p>
-                    </a>
-                    <a href="setor-oficinas.html" id="oficinas" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Oficinas</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Agenda revisões e envia alertas de carro.</p>
-                    </a>
-                    <a href="setor-turismo.html" id="turismo" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8L4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1l3 2l2 3l1-1v-3l3-2l3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Turismo</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Personaliza roteiros e gere reservas B2C.</p>
-                    </a>
-                    <a href="setor-contabilidade.html" id="contabilidade" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M10 18v-7m1.12-8.802a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949zM14 18v-7m4 7v-7M3 22h18M6 18v-7"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Contabilidade</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Processamento de documentos automático.</p>
-                    </a>
-                    <a href="setor-industria.html" id="industria" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Indústria</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Monitorização e cadeia de fornecedores.</p>
-                    </a>
-                    <a href="setor-retalho.html" id="retalho" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Retalho</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Gere stock e atendimento automatizado.</p>
-                    </a>
-                    <a href="setor-suporte-b2b.html" id="suporte-b2b" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Suporte (B2B)</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Resolução de tickets e escalonamento IA.</p>
-                    </a>
-                    <a href="setor-agricultura.html" id="agricultura" class="sector-card p-5 rounded-2xl transition-all duration-300 block bg-white border border-slate-200">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-3 text-accent"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8c0 5.5-4.78 10-10 10"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-                        <div class="text-sm font-display font-bold mb-1 text-dark">Agricultura</div>
-                        <p class="text-xs leading-relaxed text-slate-500 font-medium">Dados de campo e gestão de fornecedores.</p>
-                    </a>
+                <h2 class="text-3xl font-display font-bold text-dark tracking-tight text-center mb-16 reveal">O Fim do <span class="text-accent">Trabalho Manual</span> Repetitivo.</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Benefit 1 -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal">
+                        <div class="w-14 h-14 bg-blue-50 text-accent flex items-center justify-center rounded-xl mb-2">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-xl">Integração de CRMs e ERPs</h4>
+                        <p class="text-base text-slate-600 leading-relaxed">Conectamos o seu software de gestão (ex: Salesforce, Hubspot, Primavera, SAP) a outras plataformas da sua empresa. Evite a introdução manual de dados em múltiplos sistemas, elimine erros humanos e garanta que as suas equipas de vendas, marketing e operações têm sempre acesso à mesma informação atualizada e em tempo real.</p>
+                    </div>
+                    <!-- Benefit 2 -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-100">
+                        <div class="w-14 h-14 bg-blue-50 text-accent flex items-center justify-center rounded-xl mb-2">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-xl">Fluxos de Dados e Bases de Dados</h4>
+                        <p class="text-base text-slate-600 leading-relaxed">Desenhamos pipelines de dados complexos (ETL - Extract, Transform, Load) para extrair informações de múltiplas fontes, transformá-las e carregá-las no seu data warehouse central. Unificamos os seus dados isolados para permitir uma análise de Business Intelligence rigorosa e apoiar a tomada de decisões estratégicas suportada por dashboards em tempo real.</p>
+                    </div>
+                    <!-- Benefit 3 -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-200">
+                        <div class="w-14 h-14 bg-blue-50 text-accent flex items-center justify-center rounded-xl mb-2">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-xl">Desenvolvimento de APIs e Webhooks</h4>
+                        <p class="text-base text-slate-600 leading-relaxed">Desenvolvemos interfaces de comunicação seguras (APIs RESTful e GraphQL) à medida da sua infraestrutura. Permitimos que os seus sistemas antigos e fechados (legacy systems) comuniquem perfeitamente com as aplicações web e mobile modernas, ativando ações instantâneas através de webhooks, sem comprometer a integridade da sua rede corporativa.</p>
+                    </div>
+                    <!-- Benefit 4 -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-300">
+                        <div class="w-14 h-14 bg-blue-50 text-accent flex items-center justify-center rounded-xl mb-2">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-xl">Automação de Processos de Negócio</h4>
+                        <p class="text-base text-slate-600 leading-relaxed">Diga adeus ao trabalho repetitivo. Automatizamos tarefas como o envio de faturas, a atualização de inventário ou a criação de relatórios, integrando soluções nativas ou ferramentas como Zapier, Make e n8n. Transformamos horas de trabalho administrativo em segundos de execução automática, libertando a sua equipa para tarefas de maior valor.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- How it Works Section -->
+        <section class="relative px-6 py-24 bg-white">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-display font-bold text-dark tracking-tight text-center mb-16 reveal">O Nosso Processo de Integração</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center reveal">
+                        <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-display font-bold mb-4">1</div>
+                        <h3 class="text-lg font-display font-bold text-dark mb-2">Mapeamento</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Avaliamos os sistemas que utiliza atualmente e mapeamos o fluxo ideal da informação entre eles.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center reveal delay-100">
+                        <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-display font-bold mb-4">2</div>
+                        <h3 class="text-lg font-display font-bold text-dark mb-2">Design da Arquitetura</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Definimos a arquitetura técnica, escolhendo as APIs, webhooks ou middlewares necessários para a integração.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center reveal delay-200">
+                        <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-display font-bold mb-4">3</div>
+                        <h3 class="text-lg font-display font-bold text-dark mb-2">Desenvolvimento</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Programamos as conexões, garantindo o tratamento de erros, segurança dos dados e escalabilidade do fluxo.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="flex flex-col items-center reveal delay-300">
+                        <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-display font-bold mb-4">4</div>
+                        <h3 class="text-lg font-display font-bold text-dark mb-2">Testes & Lançamento</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Testamos extensivamente em ambiente seguro antes de ativar as integrações na sua operação diária.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="relative px-6 py-24 bg-dark">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <h2 class="font-display font-bold text-white" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.1;">
+                    Pronto para Conectar a sua Operação?
+                </h2>
+                <p class="max-w-xl mx-auto mt-6 text-lg text-slate-300 leading-relaxed">
+                    Marque uma reunião técnica gratuita. Vamos analisar a sua arquitetura atual e propor a melhor forma de integrar os seus sistemas.
+                </p>
+                <div class="mt-10">
+                    <a href="contacto.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-bold transition-all duration-300 bg-accent text-white shadow-lg shadow-blue-500/30 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/40">
+                        Falar com um Arquiteto de Software
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
-            <!-- Footer -->
+                    <!-- Footer -->
     <footer class="relative border-t border-slate-200 bg-white overflow-hidden">
         <div class="relative max-w-6xl mx-auto px-6 pt-16 pb-8">
             <div class="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8 mb-12">
@@ -299,8 +306,7 @@
                     <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navegação</h3>
                     <ul class="space-y-3">
                         <li><a href="sobre.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Sobre Nós</a></li>
-                        <li><a href="planos-flexiveis.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Planos Flexíveis</a></li>
-                        <li><a href="casos-estudo.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Casos de Estudo</a></li>
+                        <li><a href="planos-implementacao.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Planos Flexíveis</a></li>
                         <li><a href="index.html#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
                     </ul>
                 </div>
@@ -332,9 +338,9 @@
                     <a href="seguranca.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Segurança</a>
                     <div class="h-4 w-px bg-slate-200"></div>
                     <div class="flex items-center gap-2 text-xs font-bold">
-                        <a href="index.html" class="text-accent">PT</a>
+                        <a href="integracoes.html" class="text-accent">PT</a>
                         <span class="text-slate-300">|</span>
-                        <a href="../en/index.html" class="text-slate-400 hover:text-accent transition-colors">EN</a>
+                        <a href="../en/integrations.html" class="text-slate-400 hover:text-accent transition-colors">EN</a>
                     </div>
                 </div>
             </div>

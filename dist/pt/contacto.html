@@ -83,10 +83,10 @@
 </head>
 <body class="font-sans antialiased bg-base text-dark">
 
-    <!-- Navigation -->
+                <!-- Navigation -->
     <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
         <div class="flex items-center justify-between h-12">
-            <a href="index.html" aria-label="Mobizze — Início" class="font-display font-bold text-lg tracking-tight text-dark">
+            <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
                 Mobizze
             </a>
             <div class="hidden md:flex items-center gap-6 h-full">
@@ -94,15 +94,30 @@
                 <div class="relative group flex items-center h-full">
                     <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Serviços <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
                     <!-- Hitbox Invisível e Menu -->
-                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
-                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
-                            <a href="agentes-conversacao.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Conversação</a>
-                            <a href="emailbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbot</a>
-                            <a href="qualificar-leads-crm.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Qualificar Leads CRM</a>
-                            <a href="agendar-reunioes.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agendar Reuniões</a>
-                            <a href="agentes-de-voz.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Voz</a>
-                            <a href="ferramentas-personalizadas.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Ferramentas Personalizadas</a>
-                            <a href="redes-sociais.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Redes Sociais</a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[400px] z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-4 grid grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Agentes de IA</h4>
+                                <a href="agentes-conversacao.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Conversação</a>
+                                <a href="agentes-de-voz.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Voz</a>
+                                <a href="emailbot.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbots</a>
+                            </div>
+                            <div>
+                                <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Automação de Processos</h4>
+                                <a href="qualificar-leads-crm.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Vendas e CRM</a>
+                                <a href="agendar-reunioes.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agendar Reuniões</a>
+                                <a href="redes-sociais.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Redes Sociais</a>
+                            </div>
+                            <div class="col-span-2 border-t border-slate-100 pt-3 mt-1 grid grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Desenvolvimento</h4>
+                                    <a href="ferramentas-personalizadas.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Ferramentas Personalizadas</a>
+                                </div>
+                                <div>
+                                    <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Sistemas</h4>
+                                    <a href="integracoes.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Integrações e Dados</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,12 +137,12 @@
                     </div>
                 </div>
                 <a href="sobre.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Sobre Nós</a>
-                <a href="financiamento.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Financiamento</a>
+                <a href="planos-implementacao.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Planos Flexíveis</a>
                 <a href="index.html#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
             </div>
             
             <!-- Link para a página de contacto -->
-            <a href="index.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-slate-100 text-slate-700 hover:bg-slate-200 shadow-sm hover:shadow-md">Voltar ao Início</a>
+            <a href="contacto.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-accent text-white hover:bg-blue-700 shadow-sm hover:shadow-md">Falar connosco</a>
             
             <button id="mobile-menu-btn" class="md:hidden text-slate-600 focus:outline-none" aria-label="Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
@@ -139,7 +154,7 @@
     <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
         <!-- Cabeçalho Menu Mobile -->
         <div class="flex items-center justify-between p-6 pb-4 border-b border-slate-100">
-            <a href="index.html" aria-label="Mobizze — Início" class="font-display font-bold text-xl tracking-tight text-dark">
+            <a href="#" aria-label="Mobizze — Home" class="font-display font-bold text-xl tracking-tight text-dark">
                 Mobizze
             </a>
             <button id="close-mobile-menu" class="text-slate-600 focus:outline-none p-2 -mr-2 hover:bg-slate-50 rounded-full transition-colors" aria-label="Fechar Menu">
@@ -167,13 +182,13 @@
             <div class="flex flex-col gap-5">
                 <a href="setores.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Setores</a>
                 <a href="sobre.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Sobre Nós</a>
-                <a href="financiamento.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Financiamento</a>
-                <a href="index.html#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
+                <a href="planos-implementacao.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Planos Flexíveis</a>
+                <a href="#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
             </div>
             
             <!-- Link para a página de contacto -->
             <div class="mt-auto pt-6">
-                <a href="index.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-slate-100 text-slate-800 hover:bg-slate-200 text-center shadow-md">Voltar ao Início</a>
+                <a href="contacto.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-accent text-white hover:bg-blue-700 text-center shadow-md">Falar connosco</a>
             </div>
         </div>
     </div>
@@ -307,7 +322,7 @@
         </section>
     </main>
 
-    <!-- Footer -->
+            <!-- Footer -->
     <footer class="relative border-t border-slate-200 bg-white overflow-hidden">
         <div class="relative max-w-6xl mx-auto px-6 pt-16 pb-8">
             <div class="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8 mb-12">
@@ -317,7 +332,7 @@
                         Mobizze
                     </div>
                     <p class="text-sm text-slate-500 leading-relaxed mb-6 max-w-xs font-medium">
-                        Agência de Inteligência Artificial para empresas. Operamos em Portugal e no mundo, criando automações que trazem resultados.
+                        Sistemas de IA personalizados para empresas. Operamos em Portugal e no Mundo, criando automações que reduzem custos e aceleram o crescimento.
                     </p>
                 </div>
 
@@ -326,7 +341,8 @@
                     <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navegação</h3>
                     <ul class="space-y-3">
                         <li><a href="sobre.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Sobre Nós</a></li>
-                        <li><a href="financiamento.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Financiamento</a></li>
+                        <li><a href="planos-flexiveis.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Planos Flexíveis</a></li>
+                        <li><a href="casos-estudo.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Casos de Estudo</a></li>
                         <li><a href="index.html#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
                     </ul>
                 </div>
@@ -337,7 +353,7 @@
                         <li>
                             <span class="text-sm text-slate-500 font-medium flex items-start gap-2">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent mt-0.5"><path d="M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                Portugal · Worldwide
+                                Portugal · Mundo
                             </span>
                         </li>
                         <li>
@@ -352,14 +368,15 @@
 
             <div class="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <p class="text-xs text-slate-400 font-medium">&copy; 2026 <span class="font-display font-bold text-slate-600">Mobizze</span>. Todos os direitos reservados.</p>
-                <div class="flex items-center gap-4">
+                <div class="flex gap-6">
                     <a href="privacidade.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Privacidade</a>
                     <a href="termos.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Termos</a>
+                    <a href="seguranca.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Segurança</a>
                     <div class="h-4 w-px bg-slate-200"></div>
                     <div class="flex items-center gap-2 text-xs font-bold">
-                        <a href="contacto.html" class="text-accent">PT</a>
+                        <a href="index.html" class="text-accent">PT</a>
                         <span class="text-slate-300">|</span>
-                        <a href="../en/contact.html" class="text-slate-400 hover:text-accent transition-colors">EN</a>
+                        <a href="../en/index.html" class="text-slate-400 hover:text-accent transition-colors">EN</a>
                     </div>
                 </div>
             </div>

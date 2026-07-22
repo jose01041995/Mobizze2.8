@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security & GDPR | Mobizze</title>
-    <meta name="description" content="Learn about Mobizze's enterprise-grade security, data protection, and GDPR compliance for custom AI systems.">
+    <title>Security & Compliance | Mobizze</title>
+    <meta name="description" content="Read our Privacy Policy to learn how Mobizze collects, uses, and protects your data.">
     
     <!-- Favicon -->
     <link rel="icon" href="https://mobizze.com/wp-content/uploads/2020/06/favicon.ico">
@@ -67,7 +67,7 @@
 </head>
 <body class="font-sans antialiased bg-base text-dark">
 
-    <!-- Navigation -->
+                <!-- Navigation -->
     <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
         <div class="flex items-center justify-between h-12">
             <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
@@ -77,37 +77,56 @@
                 <!-- Dropdown Services -->
                 <div class="relative group flex items-center h-full">
                     <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Services <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
-                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
-                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
-                            <a href="conversational-agents.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Conversational Agents</a>
-                            <a href="emailbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbot</a>
-                            <a href="qualify-leads-crm.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Qualify Leads CRM</a>
-                            <a href="schedule-meetings.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Schedule Meetings</a>
-                            <a href="voice-agents.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Voice Agents</a>
-                            <a href="custom-tools.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Custom Tools</a>
-                            <a href="social-media.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Social Media</a>
+                    <!-- Hitbox Invisível e Menu -->
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[400px] z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-4 grid grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">AI Agents</h4>
+                                <a href="conversational-agents.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Conversational Agents</a>
+                                <a href="voice-agents.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Voice Agents</a>
+                                <a href="emailbot.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbots</a>
+                            </div>
+                            <div>
+                                <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Process Automation</h4>
+                                <a href="qualify-leads-crm.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Sales & CRM</a>
+                                <a href="schedule-meetings.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Schedule Meetings</a>
+                                <a href="social-media.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Social Media</a>
+                            </div>
+                            <div class="col-span-2 border-t border-slate-100 pt-3 mt-1 grid grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Development</h4>
+                                    <a href="custom-tools.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Custom Tools</a>
+                                </div>
+                                <div>
+                                    <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Systems</h4>
+                                    <a href="integrations.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Data & Integrations</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Dropdown Sectors -->
                 <div class="relative group flex items-center h-full">
-                    <a href="sectors.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1">Sectors <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></a>
+                    <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Sectors <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <!-- Hitbox Invisível e Menu -->
                     <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-48 z-50">
                         <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
                             <a href="sector-clinics-health.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Clinics & Health</a>
                             <a href="sector-real-estate.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Real Estate</a>
                             <a href="sector-ecommerce.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">E-commerce</a>
                             <div class="h-px bg-slate-100 my-1 mx-2"></div>
-                            <a href="sectors.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors">View all sectors &rarr;</a>
+                            <a href="sectors.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors">See all sectors &rarr;</a>
                         </div>
                     </div>
                 </div>
                 <a href="about.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">About Us</a>
-                <a href="financing.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Financing</a>
+                <a href="flexible-implementation-plans.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Flexible Plans</a>
                 <a href="index.html#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
             </div>
-            <a href="contact.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-accent text-white hover:bg-blue-700 shadow-sm hover:shadow-md">Contact Us</a>
+            
+            <a href="contact.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-accent text-white hover:bg-blue-700 shadow-sm hover:shadow-md">Talk to us</a>
+            
             <button id="mobile-menu-btn" class="md:hidden text-slate-600 focus:outline-none" aria-label="Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
             </button>
@@ -124,6 +143,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
         </div>
+
         <div class="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8">
             <div>
                 <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Services</div>
@@ -137,13 +157,16 @@
                     <a href="social-media.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Social Media</a>
                 </div>
             </div>
+            
             <div class="h-px w-full bg-slate-100"></div>
+            
             <div class="flex flex-col gap-5">
                 <a href="sectors.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Sectors</a>
                 <a href="about.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">About Us</a>
-                <a href="financing.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Financing</a>
-                <a href="index.html#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
+                <a href="flexible-implementation-plans.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Flexible Plans</a>
+                <a href="#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
             </div>
+            
             <div class="mt-auto pt-6">
                 <a href="contact.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-accent text-white hover:bg-blue-700 text-center shadow-md">Contact Us</a>
             </div>
@@ -156,10 +179,10 @@
             <div class="absolute top-0 left-0 w-full h-full pointer-events-none" style="background: radial-gradient(ellipse 80% 100% at 50% -20%, rgba(239, 246, 255, 0.8) 0%, rgba(255,255,255,0) 100%);"></div>
             <div class="max-w-4xl mx-auto px-6 w-full relative z-10 text-center">
                 <h1 class="font-display font-bold text-dark leading-[1.1] tracking-tight" style="font-size: clamp(2.5rem, 5vw, 4rem);">
-                    Security <span class="text-accent">&amp; GDPR</span>
+                    Security & <span class="text-accent">Compliance</span>
                 </h1>
                 <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto mt-6">
-                    Enterprise-grade security and data protection for your custom AI systems.
+                    Our infrastructure is built with a focus on the security and privacy of your data. Last updated: May 24, 2024.
                 </p>
             </div>
         </section>
@@ -167,44 +190,49 @@
         <!-- Legal Content Section -->
         <section class="relative px-6 py-16 bg-slate-50 border-y border-slate-200">
             <div class="max-w-3xl mx-auto legal-content">
-                <h3>1. Enterprise-Grade Security</h3>
-                <p>Mobizze ensures that all custom AI systems and automations are built with the highest standards of security. We apply security best practices across our entire infrastructure to protect your business data and intellectual property. Data is encrypted both in transit and at rest.</p>
+                <h3>1. Infrastructure and Encryption</h3>
+                <p>All data is encrypted in transit (TLS 1.2+) and at rest (AES-256). We use top-tier infrastructure providers (e.g., AWS, Google Cloud) with ISO 27001 and SOC 2 certifications.</p>
 
-                <h3>2. GDPR Compliance</h3>
-                <p>We strictly adhere to the General Data Protection Regulation (GDPR) and other applicable privacy laws. We only collect and process data necessary for the operation of the AI agents and internal systems. You retain full ownership of your data, and we provide mechanisms to export or delete your information upon request.</p>
+                <h3>2. Access Control</h3>
+                <p>We implement multi-factor authentication (MFA) and the principle of least privilege for all internal systems. Access to client data is strictly limited and logged in audit trails.</p>
 
-                <h3>3. Access Controls & Infrastructure</h3>
-                <p>Our systems utilize role-based access control (RBAC), ensuring that only authorized personnel can access sensitive data. We build our solutions on secure, compliant cloud providers that meet industry-leading security certifications.</p>
+                <h3>3. Artificial Intelligence and Data</h3>
+                <p><strong>We DO NOT use your confidential data to train our base models.</strong> The data processed through our agents and automations is strictly used to provide the service to your company, ensuring total data isolation (tenant isolation).</p>
 
-                <h3>4. AI Transparency & Safety</h3>
-                <p>All interactions with our AI systems are designed to be transparent. Users are informed when interacting with an AI agent. We enforce strict data isolation protocols: we do not use your proprietary client data or interactions to train public foundation models.</p>
-
-                <h3>5. Contact Security Team</h3>
-                <p>If you have security-related questions, want to report a vulnerability, or need assistance regarding data privacy, please contact our security team directly at <a href="mailto:contact@mobizze.com" class="text-accent font-semibold hover:underline">contact@mobizze.com</a>.</p>
-            </div>
+                <h3>4. Data Retention and Backups</h3>
+                <p>We perform daily backups. Data is retained only for the strictly necessary period or as agreed with the client. We have strict policies for secure data deletion.</p>
+                
+                <h3>5. Subprocessors</h3>
+                <p>We work only with partners (e.g., OpenAI, Anthropic, Supabase) who guarantee strict Data Processing Agreements (DPA) in compliance with the European GDPR, ensuring that data is not shared publicly.</p>
+</div>
         </section>
     </main>
 
-    <!-- Footer -->
+            <!-- Footer -->
     <footer class="relative border-t border-slate-200 bg-white overflow-hidden">
         <div class="relative max-w-6xl mx-auto px-6 pt-16 pb-8">
             <div class="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8 mb-12">
+                <!-- Branding -->
                 <div class="col-span-2 md:col-span-4">
                     <div class="font-display font-bold text-xl tracking-tight text-dark mb-4">
                         Mobizze
                     </div>
                     <p class="text-sm text-slate-500 leading-relaxed mb-6 max-w-xs font-medium">
-                        Artificial Intelligence Agency for companies. We operate in Portugal and worldwide, creating automations that bring results.
+                        Custom AI systems for businesses. We operate in Portugal and worldwide, creating automations that reduce costs and accelerate growth.
                     </p>
                 </div>
+
+                <!-- Links -->
                 <div class="col-span-1 md:col-span-2 md:col-start-7">
                     <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navigation</h3>
                     <ul class="space-y-3">
                         <li><a href="about.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">About Us</a></li>
-                        <li><a href="financing.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Financing</a></li>
+                        <li><a href="flexible-plans.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Flexible Plans</a></li>
+                        <li><a href="case-studies.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Case Studies</a></li>
                         <li><a href="index.html#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
                     </ul>
                 </div>
+
                 <div class="col-span-2 md:col-span-3 md:col-start-10">
                     <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Contact</h3>
                     <ul class="space-y-3">
@@ -223,17 +251,18 @@
                     </ul>
                 </div>
             </div>
+
             <div class="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <p class="text-xs text-slate-400 font-medium">&copy; 2026 <span class="font-display font-bold text-slate-600">Mobizze</span>. All rights reserved.</p>
-                <div class="flex items-center gap-4">
+                <div class="flex gap-6">
                     <a href="privacy.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Privacy</a>
                     <a href="terms.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Terms</a>
                     <a href="security.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Security</a>
                     <div class="h-4 w-px bg-slate-200"></div>
                     <div class="flex items-center gap-2 text-xs font-bold">
-                        <a href="../pt/seguranca.html" class="text-slate-400 hover:text-accent transition-colors">PT</a>
+                        <a href="../pt/index.html" class="text-slate-400 hover:text-accent transition-colors">PT</a>
                         <span class="text-slate-300">|</span>
-                        <a href="security.html" class="text-accent">EN</a>
+                        <a href="index.html" class="text-accent">EN</a>
                     </div>
                 </div>
             </div>

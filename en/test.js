@@ -257,7 +257,7 @@
             // Promotional message every 3 interactions
             if (userMessageCount > 0 && userMessageCount % 3 === 0) {
                 setTimeout(() => {
-                    appendMessage('system', 'Want to implement an assistant like this in your company?<br><br>Talk to us at <a href="../en/contact.html" style="color: #991b1b; text-decoration: underline; font-weight: bold;">www.mobizze.com/contact</a>');
+                    appendMessage('system', 'Want to implement an assistant like this in your company?<br><br>Talk to us at <a href="contact.html" style="color: #991b1b; text-decoration: underline; font-weight: bold;">www.mobizze.com/contact</a>');
                 }, 800);
             }
 

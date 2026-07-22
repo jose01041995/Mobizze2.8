@@ -65,8 +65,8 @@
 </head>
 <body class="font-sans antialiased bg-base text-dark">
 
-                <!-- Navigation -->
-    <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
+                    <!-- Navigation -->
+        <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
         <div class="flex items-center justify-between h-12">
             <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
                 Mobizze
@@ -97,7 +97,7 @@
                                 </div>
                                 <div>
                                     <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Systems</h4>
-                                    <a href="integrations.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Data & Integrations</a>
+                                    <a href="integrations.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Integrations & Data</a>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                             <a href="sector-real-estate.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Real Estate</a>
                             <a href="sector-ecommerce.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">E-commerce</a>
                             <div class="h-px bg-slate-100 my-1 mx-2"></div>
-                            <a href="sectors.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors">See all sectors &rarr;</a>
+                            <a href="sectors.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors">View all sectors &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -123,6 +123,7 @@
                 <a href="index.html#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
             </div>
             
+            <!-- Link para a página de contacto -->
             <a href="contact.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-accent text-white hover:bg-blue-700 shadow-sm hover:shadow-md">Talk to us</a>
             
             <button id="mobile-menu-btn" class="md:hidden text-slate-600 focus:outline-none" aria-label="Menu">
@@ -132,16 +133,18 @@
     </nav>
 
     <!-- Mobile Menu Fullscreen -->
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
+                <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
+        <!-- Cabeçalho Menu Mobile -->
         <div class="flex items-center justify-between p-6 pb-4 border-b border-slate-100">
             <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-xl tracking-tight text-dark">
                 Mobizze
             </a>
-            <button id="close-mobile-menu" class="text-slate-600 focus:outline-none p-2 -mr-2 hover:bg-slate-50 rounded-full transition-colors" aria-label="Close Menu">
+            <button id="close-mobile-menu" class="text-slate-600 focus:outline-none p-2 -mr-2 hover:bg-slate-50 rounded-full transition-colors" aria-label="Fechar Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
         </div>
 
+        <!-- Links e Opções -->
         <div class="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8">
             <div>
                 <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Services</div>
@@ -152,6 +155,7 @@
                     <a href="schedule-meetings.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Schedule Meetings</a>
                     <a href="voice-agents.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Voice Agents</a>
                     <a href="custom-tools.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Custom Tools</a>
+                    <a href="integrations.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Integrations & Data</a>
                     <a href="social-media.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Social Media</a>
                 </div>
             </div>
@@ -162,11 +166,12 @@
                 <a href="sectors.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Sectors</a>
                 <a href="about.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">About Us</a>
                 <a href="flexible-implementation-plans.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Flexible Plans</a>
-                <a href="#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
+                <a href="index.html#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
             </div>
             
+            <!-- Link para a página de contacto -->
             <div class="mt-auto pt-6">
-                <a href="contact.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-accent text-white hover:bg-blue-700 text-center shadow-md">Contact Us</a>
+                <a href="contact.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-accent text-white hover:bg-blue-700 text-center shadow-md">Talk to us</a>
             </div>
         </div>
     </div>
@@ -282,7 +287,7 @@
         </section>
     </main>
 
-            <!-- Footer -->
+                    <!-- Footer -->
     <footer class="relative border-t border-slate-200 bg-white overflow-hidden">
         <div class="relative max-w-6xl mx-auto px-6 pt-16 pb-8">
             <div class="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8 mb-12">
@@ -301,8 +306,7 @@
                     <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navigation</h3>
                     <ul class="space-y-3">
                         <li><a href="about.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">About Us</a></li>
-                        <li><a href="flexible-plans.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Flexible Plans</a></li>
-                        <li><a href="case-studies.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Case Studies</a></li>
+                        <li><a href="flexible-implementation-plans.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Flexible Plans</a></li>
                         <li><a href="index.html#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
                     </ul>
                 </div>
@@ -313,7 +317,7 @@
                         <li>
                             <span class="text-sm text-slate-500 font-medium flex items-start gap-2">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent mt-0.5"><path d="M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                Portugal · Worldwide
+                                Portugal · World
                             </span>
                         </li>
                         <li>
@@ -334,9 +338,9 @@
                     <a href="security.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Security</a>
                     <div class="h-4 w-px bg-slate-200"></div>
                     <div class="flex items-center gap-2 text-xs font-bold">
-                        <a href="../pt/index.html" class="text-slate-400 hover:text-accent transition-colors">PT</a>
+                        <a href="../pt/agentes-conversacao.html" class="text-slate-400 hover:text-accent transition-colors">PT</a>
                         <span class="text-slate-300">|</span>
-                        <a href="index.html" class="text-accent">EN</a>
+                        <a href="conversational-agents.html" class="text-accent">EN</a>
                     </div>
                 </div>
             </div>

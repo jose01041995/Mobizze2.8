@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI for Gyms & Fitness | Mobizze</title>
-    <meta name="description" content="Automate sign-ups, personalize workout plans, and increase member retention with AI agents. Free up your instructors to motivate clients.">
+    <title>Data & System Integrations | Mobizze</title>
+    <meta name="description" content="We connect your existing systems – CRM, ERP, databases, and APIs – to automate workflows, eliminate data duplication, and accelerate your operations.">
     
     <!-- Favicon -->
     <link rel="icon" href="https://mobizze.com/wp-content/uploads/2020/06/favicon.ico">
@@ -47,7 +47,7 @@
         }
     </script>
     <style>
-        body { background-color: #f8fafc; color: #0f172a; }
+        body { background-color: #f8fafc; color: #0f172a; } /* Light gray background */
         .glass-nav {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(16px);
@@ -55,6 +55,7 @@
             border: 1px solid rgba(0, 0, 0, 0.05);
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
         }
+        
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
         .delay-100 { transition-delay: 100ms; }
@@ -182,12 +183,12 @@
             
             <div class="max-w-4xl mx-auto px-6 w-full relative z-10">
                 <div class="text-center">
-                    <h1 class="text-xs font-mono tracking-[0.2em] uppercase mb-4 text-accent animate-fade-in-up">AI for Your Sector</h1>
+                    <h1 class="text-xs font-mono tracking-[0.2em] uppercase mb-4 text-accent animate-fade-in-up">Systems</h1>
                     <h2 class="font-display font-bold text-dark leading-[1.1] tracking-tight mb-6 animate-fade-in-up delay-100" style="font-size: clamp(2.5rem, 5vw, 4rem);">
-                        AI for the Future of <span class="text-accent">Fitness</span>.
+                        Connect your <span class="text-accent">Tools</span>. Unify your <span class="text-accent">Data</span>.
                     </h2>
                     <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto animate-fade-in-up delay-200">
-                        Automate sign-ups, personalize workout plans, and increase member retention. Free up your instructors to focus on motivating and delivering results for your clients.
+                        We eliminate information silos. We integrate CRMs, ERPs, and isolated applications to create seamless, automated workflows.
                     </p>
                 </div>
             </div>
@@ -196,27 +197,72 @@
         <!-- Benefits Section -->
         <section class="relative px-6 py-24 bg-slate-50 border-y border-slate-200">
             <div class="max-w-5xl mx-auto">
-                <h2 class="text-3xl font-display font-bold text-dark tracking-tight text-center mb-16 reveal">Solutions for <span class="text-accent">Gyms</span></h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal">
-                        <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="23" y1="8" x2="23" y2="14"/><line x1="20" y1="11" x2="26" y2="11"/></svg></div>
-                        <h4 class="font-display font-bold text-dark text-lg">Automatic Sign-ups & Onboarding</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">An AI agent guides new members through the sign-up process, collects data, and sends welcome information, 24/7.</p>
+                <h2 class="text-3xl font-display font-bold text-dark tracking-tight text-center mb-16 reveal">The End of <span class="text-accent">Repetitive</span> Manual Work.</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Benefit 1 -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal">
+                        <div class="w-14 h-14 bg-blue-50 text-accent flex items-center justify-center rounded-xl mb-2">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-xl">CRM & ERP Integration</h4>
+                        <p class="text-base text-slate-600 leading-relaxed">We connect your management software (e.g., Salesforce, Hubspot, Primavera, SAP) with your company's other platforms. Avoid manual data entry across multiple systems, eliminate human errors, and ensure your sales, marketing, and operations teams always have access to the same updated, real-time information.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-100">
-                        <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></div>
-                        <h4 class="font-display font-bold text-dark text-lg">Class and PT Scheduling</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">Members can book or cancel group classes and sessions with Personal Trainers via chat, with the AI managing availability.</p>
+                    <!-- Benefit 2 -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-100">
+                        <div class="w-14 h-14 bg-blue-50 text-accent flex items-center justify-center rounded-xl mb-2">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-xl">Data Flows and Databases</h4>
+                        <p class="text-base text-slate-600 leading-relaxed">We design complex data pipelines (ETL - Extract, Transform, Load) to extract information from multiple sources, transform it, and load it into your central data warehouse. We unify your siloed data to enable rigorous Business Intelligence analysis and support strategic decision-making powered by real-time dashboards.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-200">
-                        <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
-                        <h4 class="font-display font-bold text-dark text-lg">Retention Campaigns</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">The AI can contact inactive members with special offers or motivational messages, helping to reduce churn.</p>
+                    <!-- Benefit 3 -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-200">
+                        <div class="w-14 h-14 bg-blue-50 text-accent flex items-center justify-center rounded-xl mb-2">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-xl">API and Webhook Development</h4>
+                        <p class="text-base text-slate-600 leading-relaxed">We develop secure communication interfaces (RESTful and GraphQL APIs) tailored to your infrastructure. We allow your legacy, closed systems to seamlessly communicate with modern web and mobile applications, triggering instant actions through webhooks without compromising your corporate network's integrity.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-300">
-                        <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-                        <h4 class="font-display font-bold text-dark text-lg">Support and Motivation</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">The agent answers questions about schedules, classes, and plans, and can even send personalized workout or nutrition tips.</p>
+                    <!-- Benefit 4 -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-start gap-4 reveal delay-300">
+                        <div class="w-14 h-14 bg-blue-50 text-accent flex items-center justify-center rounded-xl mb-2">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
+                        <h4 class="font-display font-bold text-dark text-xl">Business Process Automation</h4>
+                        <p class="text-base text-slate-600 leading-relaxed">Say goodbye to repetitive work. We automate tasks such as sending invoices, updating inventory, or creating reports by integrating native solutions or tools like Zapier, Make, and n8n. We transform hours of administrative work into seconds of automatic execution, freeing your team for higher-value tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works Section -->
+        <section class="relative px-6 py-24 bg-white">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-display font-bold text-dark tracking-tight text-center mb-16 reveal">Our Integration Process</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center reveal">
+                        <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-display font-bold mb-4">1</div>
+                        <h3 class="text-lg font-display font-bold text-dark mb-2">Mapping</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">We evaluate the systems you currently use and map out the ideal flow of information between them.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center reveal delay-100">
+                        <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-display font-bold mb-4">2</div>
+                        <h3 class="text-lg font-display font-bold text-dark mb-2">Architecture Design</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">We define the technical architecture, choosing the APIs, webhooks, or middleware needed for the integration.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center reveal delay-200">
+                        <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-display font-bold mb-4">3</div>
+                        <h3 class="text-lg font-display font-bold text-dark mb-2">Development</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">We program the connections, ensuring robust error handling, data security, and workflow scalability.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="flex flex-col items-center reveal delay-300">
+                        <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-display font-bold mb-4">4</div>
+                        <h3 class="text-lg font-display font-bold text-dark mb-2">Testing & Launch</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">We test extensively in a secure environment before activating the integrations in your daily operations.</p>
                     </div>
                 </div>
             </div>
@@ -226,14 +272,14 @@
         <section class="relative px-6 py-24 bg-dark">
             <div class="max-w-4xl mx-auto text-center reveal">
                 <h2 class="font-display font-bold text-white" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.1;">
-                    Ready to increase member retention?
+                    Ready to Connect Your Operations?
                 </h2>
                 <p class="max-w-xl mx-auto mt-6 text-lg text-slate-300 leading-relaxed">
-                    Schedule a free diagnosis and discover how AI can optimize your gym's management and keep your members motivated.
+                    Schedule a free technical meeting. We will analyze your current architecture and propose the best way to integrate your systems.
                 </p>
                 <div class="mt-10">
                     <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-bold transition-all duration-300 bg-accent text-white shadow-lg shadow-blue-500/30 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/40">
-                        Schedule Free Diagnosis
+                        Talk to a Software Architect
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
                     </a>
                 </div>
@@ -292,9 +338,9 @@
                     <a href="security.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Security</a>
                     <div class="h-4 w-px bg-slate-200"></div>
                     <div class="flex items-center gap-2 text-xs font-bold">
-                        <a href="../pt/setor-ginasios.html" class="text-slate-400 hover:text-accent transition-colors">PT</a>
+                        <a href="../pt/integracoes.html" class="text-slate-400 hover:text-accent transition-colors">PT</a>
                         <span class="text-slate-300">|</span>
-                        <a href="sector-gyms.html" class="text-accent">EN</a>
+                        <a href="integrations.html" class="text-accent">EN</a>
                     </div>
                 </div>
             </div>
