@@ -1,6 +1,5 @@
 (function() {
     // Configurações do Bot
-    const API_KEY = "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";
     let userMessageCount = 0;
     let isOpen = false;
     let isWaitingForResponse = false;
@@ -226,6 +225,13 @@
         const text = inputField.value.trim();
         if (!text || isWaitingForResponse) return;
 
+        if (userMessageCount >= 10) {
+            appendMessage('system', 'Atingiu o limite de mensagens gratuitas.<br><br>Fale connosco em <a href="contacto.html" style="color: #991b1b; text-decoration: underline; font-weight: bold;">www.mobizze.com/contactos</a>');
+            inputField.disabled = true;
+            sendBtn.disabled = true;
+            return;
+        }
+
         // Adiciona a mensagem do utilizador
         appendMessage('user', text);
         inputField.value = '';
@@ -242,17 +248,13 @@
         showTyping();
 
         try {
-            const response = await fetch('https://api.openai.com/v1/chat/completions', {
+            const response = await fetch('/api/chat', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${API_KEY}`
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    model: 'gpt-4o-mini', // Modelo rápido e eficiente
-                    messages: apiHistory,
-                    temperature: 0.7,
-                    max_tokens: 150
+                    messages: apiHistory
                 })
             });
 

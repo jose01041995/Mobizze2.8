@@ -66,18 +66,108 @@
 <body class="font-sans antialiased bg-base text-dark">
 
     <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
-        <!-- Estrutura base de navegação. Será substituída pelo script de update global. -->
         <div class="flex items-center justify-between h-12">
             <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
                 Mobizze
             </a>
-            <div class="hidden md:flex items-center gap-6 h-full"></div>
+                        <div class="hidden md:flex items-center gap-6 h-full">
+                <!-- Dropdown Services -->
+                <div class="relative group flex items-center h-full">
+                    <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Services <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <!-- Invisible Hitbox and Menu -->
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
+                            <a href="chatbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Chatbot</a>
+                            <a href="emailbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbot</a>
+                            <a href="qualify-leads-crm.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Qualify Leads CRM</a>
+                            <a href="schedule-meetings.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Schedule Meetings</a>
+                            <a href="voice-agents.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Voice Agents</a>
+                            <a href="conversational-agents.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Text Agents</a>
+                            <a href="social-media.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Social Media</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown Sectors -->
+                <div class="relative group flex items-center h-full">
+                    <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Sectors <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <!-- Invisible Hitbox and Menu -->
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[400px] z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-4 grid grid-cols-2 gap-2">
+                            <a href="sector-accounting.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Accounting</a>
+                            <a href="sector-agriculture.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agriculture</a>
+                            <a href="sector-b2b-support.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">B2B Support</a>
+                            <a href="sector-clinics-health.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Clinics & Health</a>
+                            <a href="sector-construction.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Construction</a>
+                            <a href="sector-ecommerce.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">E-commerce</a>
+                            <a href="sector-education.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Education</a>
+                            <a href="sector-gyms.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Gyms</a>
+                            <a href="sector-industry.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Industry</a>
+                            <a href="sector-lawyers.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Lawyers</a>
+                            <a href="sector-real-estate.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Real Estate</a>
+                            <a href="sector-restaurants.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Restaurants</a>
+                            <a href="sector-retail.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Retail</a>
+                            <a href="sector-salons-aesthetics.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Salons & Aesthetics</a>
+                            <a href="sector-tourism.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Tourism</a>
+                            <a href="sector-workshops.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Workshops</a>
+                            <div class="col-span-2 h-px bg-slate-100 my-1 mx-2"></div>
+                            <a href="sectors.html" class="col-span-2 px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors text-center">View all sectors &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="about.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">About Us</a>
+                <a href="financing.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Financing</a>
+                <a href="index.html#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
+            </div>
+            <a href="contact.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-accent text-white hover:bg-blue-700 shadow-sm hover:shadow-md">Talk to us</a>
+            
             <button id="mobile-menu-btn" class="md:hidden text-slate-600 focus:outline-none" aria-label="Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
             </button>
         </div>
     </nav>
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col"></div>
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
+        <!-- Cabeçalho Menu Mobile -->
+        <div class="flex items-center justify-between p-6 pb-4 border-b border-slate-100">
+            <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-xl tracking-tight text-dark">
+                Mobizze
+            </a>
+            <button id="close-mobile-menu" class="text-slate-600 focus:outline-none p-2 -mr-2 hover:bg-slate-50 rounded-full transition-colors" aria-label="Fechar Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <!-- Links e Opções -->
+        <div class="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8">
+                        <div>
+                <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Services</div>
+                <div class="flex flex-col gap-4">
+                    <a href="chatbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Chatbot</a>
+                    <a href="emailbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Emailbot</a>
+                    <a href="qualify-leads-crm.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Qualify CRM</a>
+                    <a href="schedule-meetings.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Schedule Meetings</a>
+                    <a href="voice-agents.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Voice Agents</a>
+                    <a href="conversational-agents.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Text Agents</a>
+                    <a href="social-media.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Social Media</a>
+                </div>
+            </div>
+            
+            <div class="h-px w-full bg-slate-100"></div>
+            
+            <div class="flex flex-col gap-5">
+                <a href="sectors.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Sectors</a>
+                <a href="about.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">About Us</a>
+                <a href="financing.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Financing</a>
+                <a href="index.html#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
+            </div>
+            </div>
+            
+            <!-- Contact page link -->
+            <div class="mt-auto pt-6">
+                <a href="contact.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-accent text-white hover:bg-blue-700 text-center shadow-md">Talk to us</a>
+            </div>
+        </div>
+    </div>
 
     <main>
         <!-- Hero Section -->
@@ -100,76 +190,75 @@
         <!-- Case Studies List -->
         <section class="relative px-6 py-24 bg-slate-50">
             <div class="max-w-5xl mx-auto flex flex-col gap-16">
-                
+
                 <!-- Case Study 1 -->
                 <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm reveal flex flex-col md:flex-row gap-8 items-center">
                     <div class="flex-1">
-                        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-accent text-xs font-bold uppercase tracking-wider mb-4">Real Estate</div>
-                        <h3 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">Automatic Night-time Lead Qualification</h3>
-                        <p class="text-slate-600 leading-relaxed mb-6">A real estate agency was losing opportunities due to the high volume of after-hours contacts. We implemented an AI conversational agent connected to WhatsApp and their CRM.</p>
+                        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-accent text-xs font-bold uppercase tracking-wider mb-4">Portugal Textile</div>
+                        <h3 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">Commercial & Order Automation</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6"><strong>The Problem:</strong> Receiving a high volume of complex email orders with scattered technical information created a constant need for manual validation, delaying customer responses.</p>
                         
                         <div class="grid grid-cols-2 gap-4 mb-6">
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <div class="text-3xl font-display font-bold text-accent mb-1">+40%</div>
-                                <div class="text-xs font-medium text-slate-500 uppercase">Qualified Leads</div>
+                                <div class="text-3xl font-display font-bold text-accent mb-1">-80%</div>
+                                <div class="text-xs font-medium text-slate-500 uppercase">Admin Work</div>
                             </div>
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <div class="text-3xl font-display font-bold text-accent mb-1">0 min</div>
-                                <div class="text-xs font-medium text-slate-500 uppercase">Response Time</div>
+                                <div class="text-3xl font-display font-bold text-accent mb-1">5x</div>
+                                <div class="text-xs font-medium text-slate-500 uppercase">Faster Response</div>
                             </div>
                         </div>
                         
-                        <h4 class="font-bold text-dark mb-2 text-sm">The Result:</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">The AI began collecting budgets, zones of interest, and urgency in an empathetic manner at any time. The sales team wakes up with leads already inserted and prioritized in the system (HubSpot), focusing only on closing deals.</p>
+                        <h4 class="font-bold text-dark mb-2 text-sm">Solution & Result:</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">We implemented an AI system that automatically analyzes all incoming orders, extracts technical specs, qualifies opportunities, and prepares draft replies. Data is organized directly into the CRM, ensuring immediate commercial follow-up and allowing the team to focus on selling rather than triaging.</p>
                     </div>
                 </div>
 
                 <!-- Case Study 2 -->
                 <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm reveal flex flex-col md:flex-row gap-8 items-center">
                     <div class="flex-1">
-                        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-accent text-xs font-bold uppercase tracking-wider mb-4">E-commerce</div>
-                        <h3 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">Retail Customer Support Automation</h3>
-                        <p class="text-slate-600 leading-relaxed mb-6">An online fashion retailer faced peaks of repetitive questions about order status and returns that saturated support. The solution was an AI agent integrated directly into the online store and logistics platform.</p>
+                        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-accent text-xs font-bold uppercase tracking-wider mb-4">Portugal Shoes</div>
+                        <h3 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">Logistics Sync & Supplier Management</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6"><strong>The Problem:</strong> Tracking raw material shortages and communicating schedule changes to the factory involved dozens of phone calls and manual ERP updates, causing production delays.</p>
                         
                         <div class="grid grid-cols-2 gap-4 mb-6">
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <div class="text-3xl font-display font-bold text-accent mb-1">75%</div>
-                                <div class="text-xs font-medium text-slate-500 uppercase">Tickets Resolved by AI</div>
+                                <div class="text-3xl font-display font-bold text-accent mb-1">100%</div>
+                                <div class="text-xs font-medium text-slate-500 uppercase">Automated Tracking</div>
                             </div>
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <div class="text-3xl font-display font-bold text-accent mb-1">-60%</div>
-                                <div class="text-xs font-medium text-slate-500 uppercase">Operational Cost</div>
+                                <div class="text-3xl font-display font-bold text-accent mb-1">-40%</div>
+                                <div class="text-xs font-medium text-slate-500 uppercase">Production Delays</div>
                             </div>
                         </div>
                         
-                        <h4 class="font-bold text-dark mb-2 text-sm">The Result:</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">The AI automatically resolves transactional questions by accessing real-time data. Human teams were freed up to interact only with complex billing and loyalty cases, drastically improving CSAT (Customer Satisfaction Score).</p>
+                        <h4 class="font-bold text-dark mb-2 text-sm">Solution & Result:</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">We built a logistics assistant that cross-references supplier data with internal planning. The AI automatically alerts the factory team about material delays, suggests schedule adjustments, and updates the order status in the ERP. The factory now operates with far fewer interruptions.</p>
                     </div>
                 </div>
 
                 <!-- Case Study 3 -->
                 <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm reveal flex flex-col md:flex-row gap-8 items-center">
                     <div class="flex-1">
-                        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-accent text-xs font-bold uppercase tracking-wider mb-4">Healthcare & Clinics</div>
-                        <h3 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">Phone Scheduling with Voice Agent</h3>
-                        <p class="text-slate-600 leading-relaxed mb-6">A dental clinic network struggled to answer all calls. We developed an AI Voice Agent, natural and empathetic, focused on scheduling appointments.</p>
+                        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-accent text-xs font-bold uppercase tracking-wider mb-4">Absolutarget Group</div>
+                        <h3 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">Document Analysis & Financial Reporting</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6"><strong>The Problem:</strong> Reconciling invoices, receipts, and expense reports across multiple group companies required weeks of manual work at month-end, with a high risk of human error.</p>
                         
                         <div class="grid grid-cols-2 gap-4 mb-6">
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <div class="text-3xl font-display font-bold text-accent mb-1">100%</div>
-                                <div class="text-xs font-medium text-slate-500 uppercase">Calls Answered</div>
+                                <div class="text-3xl font-display font-bold text-accent mb-1">Days &rarr; Hrs</div>
+                                <div class="text-xs font-medium text-slate-500 uppercase">Closing Time</div>
                             </div>
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <div class="text-3xl font-display font-bold text-accent mb-1">24/7</div>
-                                <div class="text-xs font-medium text-slate-500 uppercase">Availability</div>
+                                <div class="text-3xl font-display font-bold text-accent mb-1">99.9%</div>
+                                <div class="text-xs font-medium text-slate-500 uppercase">Extraction Accuracy</div>
                             </div>
                         </div>
                         
-                        <h4 class="font-bold text-dark mb-2 text-sm">The Result:</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">The agent simultaneously answers dozens of patients, checks doctors' availability via API integration, schedules the appointment, and sends a confirmation SMS. Receptionists could then focus on providing excellent in-person service.</p>
+                        <h4 class="font-bold text-dark mb-2 text-sm">Solution & Result:</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">We developed a system that reads hundreds of unstructured financial documents. The AI extracts values, categorizes expenses, and exports centralized dashboards for group management. A process that used to take days is now closed in hours with total accuracy.</p>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -196,13 +285,58 @@
     <footer class="relative border-t border-slate-200 bg-white overflow-hidden">
         <div class="relative max-w-6xl mx-auto px-6 pt-16 pb-8">
             <div class="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8 mb-12">
+                <!-- Branding -->
                 <div class="col-span-2 md:col-span-4">
-                    <div class="font-display font-bold text-xl tracking-tight text-dark mb-4">Mobizze</div>
-                    <p class="text-sm text-slate-500 leading-relaxed mb-6 max-w-xs font-medium">Custom AI systems for businesses. We operate globally, creating automations that reduce costs and accelerate growth.</p>
+                    <div class="font-display font-bold text-xl tracking-tight text-dark mb-4">
+                        Mobizze
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6 max-w-xs font-medium">
+                        Custom AI systems for businesses. We operate in Portugal and worldwide, creating automations that reduce costs and accelerate growth.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-span-1 md:col-span-2 md:col-start-7">
+                    <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navigation</h3>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">About Us</a></li>
+                        <li><a href="financing.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Financing</a></li>
+                        <li><a href="index.html#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-2 md:col-span-3 md:col-start-10">
+                    <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Contact</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <span class="text-sm text-slate-500 font-medium flex items-start gap-2">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent mt-0.5"><path d="M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                Portugal · World
+                            </span>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@mobizze.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                contact@mobizze.com
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
             <div class="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <p class="text-xs text-slate-400 font-medium">&copy; 2026 <span class="font-display font-bold text-slate-600">Mobizze</span>. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="privacy.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Privacy</a>
+                    <a href="terms.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Terms</a>
+                    <a href="security.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Security</a>
+                    <div class="h-4 w-px bg-slate-200"></div>
+                    <div class="flex items-center gap-2 text-xs font-bold">
+                        <a href="../pt/index.html" class="text-slate-400 hover:text-accent transition-colors">PT</a>
+                        <span class="text-slate-300">|</span>
+                        <a href="index.html" class="text-accent">EN</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

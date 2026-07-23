@@ -67,19 +67,108 @@
 
     <!-- O cabeçalho será injetado pelo script update_header.py ou podemos colocá-lo aqui já -->
     <nav id="navbar" class="fixed top-4 left-1/2 z-50 transition-all duration-700 -translate-x-1/2 w-[min(800px,94vw)] rounded-full px-5 glass-nav">
-        <!-- Estrutura base de navegação. Será substituída pelo script de update global. -->
         <div class="flex items-center justify-between h-12">
             <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
                 Mobizze
             </a>
-            <!-- Placeholders for script update -->
-            <div class="hidden md:flex items-center gap-6 h-full"></div>
+                        <div class="hidden md:flex items-center gap-6 h-full">
+                <!-- Dropdown Serviços -->
+                <div class="relative group flex items-center h-full">
+                    <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Serviços <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <!-- Hitbox Invisível e Menu -->
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
+                            <a href="chatbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Chatbot</a>
+                            <a href="emailbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbot</a>
+                            <a href="qualificar-leads-crm.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Qualificar Leads CRM</a>
+                            <a href="agendar-reunioes.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agendar Reuniões</a>
+                            <a href="agentes-de-voz.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Voz</a>
+                            <a href="agentes-de-texto.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agentes de Texto</a>
+                            <a href="redes-sociais.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Redes Sociais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown Setores -->
+                <div class="relative group flex items-center h-full">
+                    <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Setores <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
+                    <!-- Hitbox Invisível e Menu -->
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[400px] z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-4 grid grid-cols-2 gap-2">
+                            <a href="setor-advogados.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Advogados</a>
+                            <a href="setor-agricultura.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agricultura</a>
+                            <a href="setor-clinicas-saude.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Clínicas & Saúde</a>
+                            <a href="setor-construcao.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Construção</a>
+                            <a href="setor-contabilidade.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Contabilidade</a>
+                            <a href="setor-ecommerce.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">E-commerce</a>
+                            <a href="setor-educacao.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Educação</a>
+                            <a href="setor-ginasios.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Ginásios</a>
+                            <a href="setor-imobiliarias.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Imobiliárias</a>
+                            <a href="setor-industria.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Indústria</a>
+                            <a href="setor-oficinas.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Oficinas</a>
+                            <a href="setor-restaurantes.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Restaurantes</a>
+                            <a href="setor-retalho.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Retalho</a>
+                            <a href="setor-saloes-estetica.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Salões & Estética</a>
+                            <a href="setor-suporte-b2b.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Suporte B2B</a>
+                            <a href="setor-turismo.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Turismo</a>
+                            <div class="col-span-2 h-px bg-slate-100 my-1 mx-2"></div>
+                            <a href="setores.html" class="col-span-2 px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors text-center">Ver todos os setores &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="sobre.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Sobre Nós</a>
+                <a href="financiamento.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Financiamento</a>
+                <a href="index.html#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
+            </div>
+            <a href="contacto.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-accent text-white hover:bg-blue-700 shadow-sm hover:shadow-md">Falar connosco</a>
+            
             <button id="mobile-menu-btn" class="md:hidden text-slate-600 focus:outline-none" aria-label="Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
             </button>
         </div>
     </nav>
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col"></div>
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full h-[100dvh] bg-white z-[100] flex flex-col">
+        <!-- Cabeçalho Menu Mobile -->
+        <div class="flex items-center justify-between p-6 pb-4 border-b border-slate-100">
+            <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-xl tracking-tight text-dark">
+                Mobizze
+            </a>
+            <button id="close-mobile-menu" class="text-slate-600 focus:outline-none p-2 -mr-2 hover:bg-slate-50 rounded-full transition-colors" aria-label="Fechar Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <!-- Links e Opções -->
+        <div class="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8">
+                        <div>
+                <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Serviços</div>
+                <div class="flex flex-col gap-4">
+                    <a href="chatbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Chatbot</a>
+                    <a href="emailbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Emailbot</a>
+                    <a href="qualificar-leads-crm.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Qualificar CRM</a>
+                    <a href="agendar-reunioes.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agendar Reuniões</a>
+                    <a href="agentes-de-voz.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Voz</a>
+                    <a href="agentes-de-texto.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Agentes de Texto</a>
+                    <a href="redes-sociais.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Redes Sociais</a>
+                </div>
+            </div>
+            
+            <div class="h-px w-full bg-slate-100"></div>
+            
+            <div class="flex flex-col gap-5">
+                <a href="setores.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Setores</a>
+                <a href="sobre.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Sobre Nós</a>
+                <a href="financiamento.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Financiamento</a>
+                <a href="index.html#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
+            </div>
+            </div>
+            
+            <!-- Link para a página de contacto -->
+            <div class="mt-auto pt-6">
+                <a href="contacto.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-accent text-white hover:bg-blue-700 text-center shadow-md">Falar connosco</a>
+            </div>
+        </div>
+    </div>
 
     <main>
         <!-- Hero Section -->
@@ -102,76 +191,75 @@
         <!-- Case Studies List -->
         <section class="relative px-6 py-24 bg-slate-50">
             <div class="max-w-5xl mx-auto flex flex-col gap-16">
-                
+
                 <!-- Case Study 1 -->
                 <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm reveal flex flex-col md:flex-row gap-8 items-center">
                     <div class="flex-1">
-                        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-accent text-xs font-bold uppercase tracking-wider mb-4">Imobiliário</div>
-                        <h3 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">Qualificação Automática de Leads Noturnas</h3>
-                        <p class="text-slate-600 leading-relaxed mb-6">Uma agência imobiliária estava a perder oportunidades devido ao elevado volume de contactos fora de horas. Implementámos um agente de conversação IA conectado ao WhatsApp e ao CRM.</p>
+                        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-accent text-xs font-bold uppercase tracking-wider mb-4">Portugal Textile</div>
+                        <h3 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">Automação Comercial e de Encomendas</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6"><strong>O Problema:</strong> Receção de um elevado volume de pedidos complexos por email, com informação técnica dispersa, criando a necessidade constante de validação manual e atrasando respostas ao cliente.</p>
                         
                         <div class="grid grid-cols-2 gap-4 mb-6">
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <div class="text-3xl font-display font-bold text-accent mb-1">+40%</div>
-                                <div class="text-xs font-medium text-slate-500 uppercase">Leads Qualificadas</div>
+                                <div class="text-3xl font-display font-bold text-accent mb-1">-80%</div>
+                                <div class="text-xs font-medium text-slate-500 uppercase">Trabalho Administrativo</div>
                             </div>
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <div class="text-3xl font-display font-bold text-accent mb-1">0 min</div>
-                                <div class="text-xs font-medium text-slate-500 uppercase">Tempo de Resposta</div>
+                                <div class="text-3xl font-display font-bold text-accent mb-1">5x</div>
+                                <div class="text-xs font-medium text-slate-500 uppercase">Resposta Mais Rápida</div>
                             </div>
                         </div>
                         
-                        <h4 class="font-bold text-dark mb-2 text-sm">O Resultado:</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">A IA começou a recolher orçamentos, zonas de interesse e urgência de forma empática a qualquer hora. A equipa de vendas acorda com as leads já inseridas e priorizadas no sistema (HubSpot), focando-se apenas no fecho dos negócios.</p>
+                        <h4 class="font-bold text-dark mb-2 text-sm">A Solução & Resultado:</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Implementámos um sistema de IA que analisa automaticamente todos os pedidos, extrai especificações técnicas, qualifica as oportunidades e prepara esboços de respostas. Os dados são organizados diretamente no CRM, garantindo um acompanhamento comercial imediato e permitindo à equipa focar-se em vendas em vez de triagem.</p>
                     </div>
                 </div>
 
                 <!-- Case Study 2 -->
                 <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm reveal flex flex-col md:flex-row gap-8 items-center">
                     <div class="flex-1">
-                        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-accent text-xs font-bold uppercase tracking-wider mb-4">E-commerce</div>
-                        <h3 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">Automação de Suporte a Clientes de Retalho</h3>
-                        <p class="text-slate-600 leading-relaxed mb-6">Um retalhista online de moda enfrentava picos de perguntas repetitivas sobre estado de encomendas e devoluções que saturavam o suporte. A solução foi um agente de IA integrado diretamente na loja online e plataforma logística.</p>
+                        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-accent text-xs font-bold uppercase tracking-wider mb-4">Portugal Shoes</div>
+                        <h3 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">Sincronização Logística e Gestão de Fornecedores</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6"><strong>O Problema:</strong> Acompanhar falhas em matérias-primas e comunicar alterações de planeamento à fábrica envolvia dezenas de telefonemas e atualizações manuais no ERP, gerando atrasos na produção.</p>
                         
                         <div class="grid grid-cols-2 gap-4 mb-6">
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <div class="text-3xl font-display font-bold text-accent mb-1">75%</div>
-                                <div class="text-xs font-medium text-slate-500 uppercase">Tickets Resolvidos por IA</div>
+                                <div class="text-3xl font-display font-bold text-accent mb-1">100%</div>
+                                <div class="text-xs font-medium text-slate-500 uppercase">Rastreio Automático</div>
                             </div>
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <div class="text-3xl font-display font-bold text-accent mb-1">-60%</div>
-                                <div class="text-xs font-medium text-slate-500 uppercase">Custo Operacional</div>
+                                <div class="text-3xl font-display font-bold text-accent mb-1">-40%</div>
+                                <div class="text-xs font-medium text-slate-500 uppercase">Atrasos de Produção</div>
                             </div>
                         </div>
                         
-                        <h4 class="font-bold text-dark mb-2 text-sm">O Resultado:</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">A IA resolve automaticamente perguntas transacionais acedendo a dados em tempo real. As equipas humanas foram libertadas para interagir apenas com casos complexos de faturação e fidelização, melhorando drasticamente o CSAT (Customer Satisfaction Score).</p>
+                        <h4 class="font-bold text-dark mb-2 text-sm">A Solução & Resultado:</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Criámos um assistente logístico que cruza dados de fornecedores com o planeamento interno. A IA alerta automaticamente a equipa fabril sobre atrasos de material, sugere ajustes de planeamento e atualiza o estado da encomenda no ERP. A fábrica opera com muito menos interrupções.</p>
                     </div>
                 </div>
 
                 <!-- Case Study 3 -->
                 <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm reveal flex flex-col md:flex-row gap-8 items-center">
                     <div class="flex-1">
-                        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-accent text-xs font-bold uppercase tracking-wider mb-4">Saúde & Clínicas</div>
-                        <h3 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">Agendamento por Telefone com Agente de Voz</h3>
-                        <p class="text-slate-600 leading-relaxed mb-6">Uma rede de clínicas dentárias tinha dificuldades em atender todas as chamadas. Desenvolvemos um Agente de Voz com IA, natural e empático, focado em agendamentos.</p>
+                        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-accent text-xs font-bold uppercase tracking-wider mb-4">Grupo Absolutarget</div>
+                        <h3 class="text-2xl md:text-3xl font-display font-bold text-dark mb-4">Análise Documental e Reporting Financeiro</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6"><strong>O Problema:</strong> Conciliar faturas, recibos e relatórios de despesas de várias empresas do grupo requeria semanas de trabalho manual no fecho do mês, com elevado risco de erro humano.</p>
                         
                         <div class="grid grid-cols-2 gap-4 mb-6">
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <div class="text-3xl font-display font-bold text-accent mb-1">100%</div>
-                                <div class="text-xs font-medium text-slate-500 uppercase">Chamadas Atendidas</div>
+                                <div class="text-3xl font-display font-bold text-accent mb-1">Dias &rarr; Horas</div>
+                                <div class="text-xs font-medium text-slate-500 uppercase">Tempo de Fecho</div>
                             </div>
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <div class="text-3xl font-display font-bold text-accent mb-1">24/7</div>
-                                <div class="text-xs font-medium text-slate-500 uppercase">Disponibilidade</div>
+                                <div class="text-3xl font-display font-bold text-accent mb-1">99.9%</div>
+                                <div class="text-xs font-medium text-slate-500 uppercase">Precisão na Extração</div>
                             </div>
                         </div>
                         
-                        <h4 class="font-bold text-dark mb-2 text-sm">O Resultado:</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">O agente atende simultaneamente dezenas de pacientes, verifica a disponibilidade dos médicos via integração API, realiza a marcação e envia um SMS de confirmação. As rececionistas passaram a concentrar-se no atendimento presencial de excelência.</p>
+                        <h4 class="font-bold text-dark mb-2 text-sm">A Solução & Resultado:</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Desenvolvemos um sistema que lê centenas de documentos financeiros num formato desestruturado. A IA extrai valores, categoriza despesas e exporta dashboards centralizados para a gestão do grupo. O processo que demorava dias é agora fechado em horas com precisão total.</p>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -196,16 +284,60 @@
 
     <!-- Footer -->
     <footer class="relative border-t border-slate-200 bg-white overflow-hidden">
-        <!-- Estrutura base de footer. Será substituída pelo script de update global se aplicável, caso contrário fica o standard -->
         <div class="relative max-w-6xl mx-auto px-6 pt-16 pb-8">
             <div class="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8 mb-12">
+                <!-- Branding -->
                 <div class="col-span-2 md:col-span-4">
-                    <div class="font-display font-bold text-xl tracking-tight text-dark mb-4">Mobizze</div>
-                    <p class="text-sm text-slate-500 leading-relaxed mb-6 max-w-xs font-medium">Sistemas de IA personalizados para empresas. Operamos em Portugal e no Mundo, criando automações que reduzem custos e aceleram o crescimento.</p>
+                    <div class="font-display font-bold text-xl tracking-tight text-dark mb-4">
+                        Mobizze
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6 max-w-xs font-medium">
+                        Sistemas de IA personalizados para empresas. Operamos em Portugal e no Mundo, criando automações que reduzem custos e aceleram o crescimento.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-span-1 md:col-span-2 md:col-start-7">
+                    <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navegação</h3>
+                    <ul class="space-y-3">
+                        <li><a href="sobre.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Sobre Nós</a></li>
+                        <li><a href="financiamento.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Financiamento</a></li>
+                        <li><a href="index.html#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-2 md:col-span-3 md:col-start-10">
+                    <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Contacto</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <span class="text-sm text-slate-500 font-medium flex items-start gap-2">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent mt-0.5"><path d="M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                Portugal · Mundo
+                            </span>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@mobizze.com" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                contact@mobizze.com
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
             <div class="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <p class="text-xs text-slate-400 font-medium">&copy; 2026 <span class="font-display font-bold text-slate-600">Mobizze</span>. Todos os direitos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="privacidade.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Privacidade</a>
+                    <a href="termos.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Termos</a>
+                    <a href="seguranca.html" class="text-xs text-slate-400 hover:text-slate-600 font-medium transition-colors">Segurança</a>
+                    <div class="h-4 w-px bg-slate-200"></div>
+                    <div class="flex items-center gap-2 text-xs font-bold">
+                        <a href="index.html" class="text-accent">PT</a>
+                        <span class="text-slate-300">|</span>
+                        <a href="../en/index.html" class="text-slate-400 hover:text-accent transition-colors">EN</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

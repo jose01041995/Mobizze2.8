@@ -89,35 +89,20 @@
             <a href="index.html" aria-label="Mobizze — Home" class="font-display font-bold text-lg tracking-tight text-dark">
                 Mobizze
             </a>
-            <div class="hidden md:flex items-center gap-6 h-full">
+                        <div class="hidden md:flex items-center gap-6 h-full">
                 <!-- Dropdown Services -->
                 <div class="relative group flex items-center h-full">
                     <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Services <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
-                    <!-- Hitbox Invisível e Menu -->
-                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[400px] z-50">
-                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-4 grid grid-cols-2 gap-4">
-                            <div>
-                                <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">AI Agents</h4>
-                                <a href="conversational-agents.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Conversational Agents</a>
-                                <a href="voice-agents.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Voice Agents</a>
-                                <a href="emailbot.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbots</a>
-                            </div>
-                            <div>
-                                <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Process Automation</h4>
-                                <a href="qualify-leads-crm.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Sales & CRM</a>
-                                <a href="schedule-meetings.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Schedule Meetings</a>
-                                <a href="social-media.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Social Media</a>
-                            </div>
-                            <div class="col-span-2 border-t border-slate-100 pt-3 mt-1 grid grid-cols-2 gap-4">
-                                <div>
-                                    <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Development</h4>
-                                    <a href="custom-tools.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Custom Tools</a>
-                                </div>
-                                <div>
-                                    <h4 class="text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2 px-2">Systems</h4>
-                                    <a href="integrations.html" class="block px-2 py-1.5 rounded-lg hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Integrations & Data</a>
-                                </div>
-                            </div>
+                    <!-- Invisible Hitbox and Menu -->
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
+                            <a href="chatbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Chatbot</a>
+                            <a href="emailbot.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Emailbot</a>
+                            <a href="qualify-leads-crm.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Qualify Leads CRM</a>
+                            <a href="schedule-meetings.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Schedule Meetings</a>
+                            <a href="voice-agents.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Voice Agents</a>
+                            <a href="conversational-agents.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Text Agents</a>
+                            <a href="social-media.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Social Media</a>
                         </div>
                     </div>
                 </div>
@@ -125,23 +110,34 @@
                 <!-- Dropdown Sectors -->
                 <div class="relative group flex items-center h-full">
                     <button class="text-xs font-medium text-slate-600 group-hover:text-accent transition-colors duration-300 tracking-wide flex items-center gap-1 cursor-pointer">Sectors <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:-rotate-180"><path d="m6 9 6 6 6-6"></path></svg></button>
-                    <!-- Hitbox Invisível e Menu -->
-                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-48 z-50">
-                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1">
-                            <a href="sector-clinics-health.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Clinics & Health</a>
-                            <a href="sector-real-estate.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Real Estate</a>
-                            <a href="sector-ecommerce.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">E-commerce</a>
-                            <div class="h-px bg-slate-100 my-1 mx-2"></div>
-                            <a href="sectors.html" class="px-4 py-2.5 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors">View all sectors &rarr;</a>
+                    <!-- Invisible Hitbox and Menu -->
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[400px] z-50">
+                        <div class="bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-slate-100 p-4 grid grid-cols-2 gap-2">
+                            <a href="sector-accounting.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Accounting</a>
+                            <a href="sector-agriculture.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Agriculture</a>
+                            <a href="sector-b2b-support.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">B2B Support</a>
+                            <a href="sector-clinics-health.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Clinics & Health</a>
+                            <a href="sector-construction.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Construction</a>
+                            <a href="sector-ecommerce.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">E-commerce</a>
+                            <a href="sector-education.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Education</a>
+                            <a href="sector-gyms.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Gyms</a>
+                            <a href="sector-industry.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Industry</a>
+                            <a href="sector-lawyers.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Lawyers</a>
+                            <a href="sector-real-estate.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Real Estate</a>
+                            <a href="sector-restaurants.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Restaurants</a>
+                            <a href="sector-retail.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Retail</a>
+                            <a href="sector-salons-aesthetics.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Salons & Aesthetics</a>
+                            <a href="sector-tourism.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Tourism</a>
+                            <a href="sector-workshops.html" class="px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-medium transition-colors">Workshops</a>
+                            <div class="col-span-2 h-px bg-slate-100 my-1 mx-2"></div>
+                            <a href="sectors.html" class="col-span-2 px-3 py-2 rounded-xl hover:bg-blue-50 text-xs text-slate-600 hover:text-accent font-semibold transition-colors text-center">View all sectors &rarr;</a>
                         </div>
                     </div>
                 </div>
                 <a href="about.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">About Us</a>
-                <a href="flexible-implementation-plans.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Flexible Plans</a>
+                <a href="financing.html" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">Financing</a>
                 <a href="index.html#faq" class="text-xs font-medium text-slate-600 hover:text-accent transition-colors duration-300 tracking-wide">FAQ</a>
             </div>
-            
-            <!-- Link para a página de contacto -->
             <a href="contact.html" class="hidden md:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-accent text-white hover:bg-blue-700 shadow-sm hover:shadow-md">Talk to us</a>
             
             <button id="mobile-menu-btn" class="md:hidden text-slate-600 focus:outline-none" aria-label="Menu">
@@ -164,16 +160,15 @@
 
         <!-- Links e Opções -->
         <div class="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8">
-            <div>
+                        <div>
                 <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Services</div>
                 <div class="flex flex-col gap-4">
-                    <a href="conversational-agents.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Conversational Agents</a>
+                    <a href="chatbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Chatbot</a>
                     <a href="emailbot.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Emailbot</a>
                     <a href="qualify-leads-crm.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Qualify CRM</a>
                     <a href="schedule-meetings.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Schedule Meetings</a>
                     <a href="voice-agents.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Voice Agents</a>
-                    <a href="custom-tools.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Custom Tools</a>
-                    <a href="integrations.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Integrations & Data</a>
+                    <a href="conversational-agents.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Text Agents</a>
                     <a href="social-media.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-accent">Social Media</a>
                 </div>
             </div>
@@ -183,11 +178,12 @@
             <div class="flex flex-col gap-5">
                 <a href="sectors.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Sectors</a>
                 <a href="about.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">About Us</a>
-                <a href="flexible-implementation-plans.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Flexible Plans</a>
+                <a href="financing.html" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">Financing</a>
                 <a href="index.html#faq" class="mobile-link text-xl font-display font-bold text-slate-800 hover:text-accent">FAQ</a>
             </div>
+            </div>
             
-            <!-- Link para a página de contacto -->
+            <!-- Contact page link -->
             <div class="mt-auto pt-6">
                 <a href="contact.html" class="mobile-link w-full block py-4 rounded-full text-base font-semibold bg-accent text-white hover:bg-blue-700 text-center shadow-md">Talk to us</a>
             </div>
@@ -344,7 +340,7 @@
                     <h3 class="text-xs font-mono tracking-[0.1em] uppercase mb-4 text-slate-900 font-bold">Navigation</h3>
                     <ul class="space-y-3">
                         <li><a href="about.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">About Us</a></li>
-                        <li><a href="flexible-implementation-plans.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Flexible Plans</a></li>
+                        <li><a href="financing.html" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">Financing</a></li>
                         <li><a href="index.html#faq" class="text-sm text-slate-500 hover:text-accent font-medium transition-colors">FAQ</a></li>
                     </ul>
                 </div>
