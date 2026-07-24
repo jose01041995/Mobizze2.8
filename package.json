@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "if [ -d en ] && [ -d pt ]; then rm -rf dist && mkdir -p dist && cp -R index.html en pt team.png contact.php api dist/; elif [ -d dist/en ] && [ -d dist/pt ]; then echo \"Using existing dist output\"; else echo \"Missing en/pt source folders or dist output\" >&2; exit 1; fi"
+    "build": "if [ -d en ] && [ -d pt ]; then rm -rf dist && mkdir -p dist && cp -R index.html en pt team.png contact.php api sitemap.xml robots.txt dist/; elif [ -d dist/en ] && [ -d dist/pt ]; then echo \"Using existing dist output\"; else echo \"Missing en/pt source folders or dist output\" >&2; exit 1; fi"
   }
 }
