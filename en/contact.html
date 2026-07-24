@@ -429,6 +429,31 @@
             if(form && successState) {
                 form.addEventListener('submit', (e) => {
                     e.preventDefault();
+
+                    const formData = {
+                        nome: document.getElementById('nome').value,
+                        empresa: document.getElementById('empresa').value,
+                        email: document.getElementById('email').value,
+                        telefone: document.getElementById('telefone').value,
+                        desafio: document.getElementById('desafio').value,
+                        detalhes: document.getElementById('detalhes').value
+                    };
+
+                    fetch('../contact.php', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(formData)
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Success:', data);
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                    });
+
                     
                     form.style.opacity = '0';
                     form.style.transform = 'scale(0.95)';
