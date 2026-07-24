@@ -35,7 +35,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Email configuration
-$to = 'contact@mobizze.com';
+$to = 'info@mobizze.com';
 $subject = 'Novo Pedido de Diagnóstico - ' . $empresa;
 
 // Email headers
