@@ -1,23 +1,22 @@
 (function() {
-    // Bot Configuration
-    let userMessageCount = 0;
+    // Configurações do Bot
+        let userMessageCount = 0;
     let isOpen = false;
     let isWaitingForResponse = false;
 
-    // Conversation history for API (OpenAI)
+    // Histórico de conversa para a API (OpenAI)
     let apiHistory = [
         { 
             role: "system", 
-            content: "You are an intelligent virtual assistant for Mobizze, an AI agency. You are friendly, direct, and professional. Always reply in English. Your goal is to help the user understand the power of automation, but responses must be concise (max 2-3 short sentences)." 
+            content: "You are an intelligent virtual assistant for Mobizze, uma agência de IA. És amigável, direto e profissional. Always reply in English. Your goal is to help the user understand the power of automation, but responses must be concise (max 2-3 short sentences)." 
         }
     ];
 
-    // History to keep in the UI
+    // Histórico para manter na Interface (Ecrã)
     let uiMessages = [];
 
-    // Function to save data and keep chat active after page refresh
+    // Função para gravar os dados e manter o chat ativo após dar "refresh" na página
     function saveState() {
-        // We use a different key (_en) so it doesn't conflict with the PT version
         localStorage.setItem('mbz_chat_state_en', JSON.stringify({
             apiHistory,
             uiMessages,
@@ -25,6 +24,7 @@
         }));
     }
 
+    // Injetar os estilos CSS na página
     const styles = `
         #mbz-widget { position: fixed; bottom: 24px; right: 24px; z-index: 999999; font-family: 'Inter', system-ui, sans-serif; }
         
@@ -69,31 +69,33 @@
         @keyframes mbz-bounce { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } }
     `;
 
+    // Adicionar CSS ao head
     const styleEl = document.createElement('style');
     styleEl.innerHTML = styles;
     document.head.appendChild(styleEl);
 
+    // Estrutura HTML do Widget
     const widgetHTML = `
         <div id="mbz-chat">
             <div id="mbz-header">
                 <div id="mbz-header-title">
-                    <span class="status"></span> Mobizze AI
+                    <span class="status"></span> Mobizze IA
                 </div>
                 <div id="mbz-header-actions">
-                    <button id="mbz-restart" aria-label="Restart" title="Clear and restart conversation">
+                    <button id="mbz-restart" aria-label="Reiniciar" title="Limpar e reiniciar conversa">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
                     </button>
-                    <button id="mbz-close" aria-label="Close" title="Close chat">
+                    <button id="mbz-close" aria-label="Fechar" title="Fechar chat">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                     </button>
                 </div>
             </div>
             <div id="mbz-messages">
-                <!-- Messages generated via JS -->
+                <!-- As mensagens são agora geradas via JavaScript para manter o histórico entre páginas -->
             </div>
             <div id="mbz-input-area">
-                <input type="text" id="mbz-input" placeholder="Type your message..." autocomplete="off">
-                <button id="mbz-send" aria-label="Send">
+                <input type="text" id="mbz-input" placeholder="Escreva a sua mensagem..." autocomplete="off">
+                <button id="mbz-send" aria-label="Enviar">
                     <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                 </button>
             </div>
@@ -104,11 +106,13 @@
         </button>
     `;
 
+    // Injetar no body
     const widgetContainer = document.createElement('div');
     widgetContainer.id = 'mbz-widget';
     widgetContainer.innerHTML = widgetHTML;
     document.body.appendChild(widgetContainer);
 
+    // Seletores
     const toggleBtn = document.getElementById('mbz-toggle');
     const closeBtn = document.getElementById('mbz-close');
     const restartBtn = document.getElementById('mbz-restart');
@@ -117,7 +121,7 @@
     const inputField = document.getElementById('mbz-input');
     const sendBtn = document.getElementById('mbz-send');
 
-    // Open/Close events
+    // Eventos de abrir/fechar
     toggleBtn.addEventListener('click', () => {
         isOpen = !isOpen;
         chatWindow.classList.toggle('mbz-open', isOpen);
@@ -133,29 +137,33 @@
         setTimeout(() => { toggleBtn.style.display = 'flex'; }, 200);
     });
 
-    // Restart conversation event
+    // Evento de reiniciar conversa
     restartBtn.addEventListener('click', () => {
+        // Limpar storage
         localStorage.removeItem('mbz_chat_state_en');
         
+        // Repor as variáveis globais
         userMessageCount = 0;
         uiMessages = [];
         apiHistory = [
             { 
                 role: "system", 
-                content: "You are an intelligent virtual assistant for Mobizze, an AI agency. You are friendly, direct, and professional. Always reply in English. Your goal is to help the user understand the power of automation, but responses must be concise (max 2-3 short sentences)." 
+                content: "You are an intelligent virtual assistant for Mobizze, uma agência de IA. És amigável, direto e profissional. Always reply in English. Your goal is to help the user understand the power of automation, but responses must be concise (max 2-3 short sentences)." 
             }
         ];
 
+        // Limpar ecrã e dar saudação de novo
         messagesContainer.innerHTML = '';
-        appendMessage('bot', 'Hello! 👋 I am Mobizze\'s AI assistant. You can test my capabilities right now. How can I help you?');
+        appendMessage('bot', 'Hello! 👋 I am the AI assistant for Mobizze. You can test my capabilities right now. How can I help you?');
     });
 
+    // Função para adicionar mensagem ao ecrã
     function appendMessage(role, text, save = true) {
         const msgDiv = document.createElement('div');
         msgDiv.className = `mbz-msg ${role}`;
         
         if (role === 'system') {
-            msgDiv.innerHTML = text;
+            msgDiv.innerHTML = text; // Permite HTML para o link
         } else {
             msgDiv.textContent = text;
         }
@@ -169,6 +177,7 @@
         }
     }
 
+    // Inicializar o chat recuperando o estado guardado ou dando a saudação inicial
     function initChat() {
         const saved = localStorage.getItem('mbz_chat_state_en');
         if (saved) {
@@ -181,7 +190,7 @@
                 appendMessage(msg.type, msg.content, false);
             });
         } else {
-            appendMessage('bot', 'Hello! 👋 I am Mobizze\'s AI assistant. You can test my capabilities right now. How can I help you?');
+            appendMessage('bot', 'Hello! 👋 I am the AI assistant for Mobizze. You can test my capabilities right now. How can I help you?');
         }
     }
     
@@ -211,37 +220,35 @@
         messagesContainer.scrollTop = messagesContainer.scrollHeight;
     }
 
+    // Função principal de envio e comunicação com OpenAI
     async function handleSend() {
         const text = inputField.value.trim();
         if (!text || isWaitingForResponse) return;
 
-        if (userMessageCount >= 10) {
-            appendMessage('system', 'You have reached the free message limit.<br><br>Talk to us at <a href="contact.html" style="color: #991b1b; text-decoration: underline; font-weight: bold;">www.mobizze.com/contact</a>');
-            inputField.disabled = true;
-            sendBtn.disabled = true;
-            return;
-        }
-
+        // Adiciona a mensagem do utilizador
         appendMessage('user', text);
         inputField.value = '';
         userMessageCount++;
         
+        // Adiciona ao histórico da API
         apiHistory.push({ role: "user", content: text });
         saveState();
 
+        // Chamada à API
         isWaitingForResponse = true;
         inputField.disabled = true;
         sendBtn.disabled = true;
         showTyping();
 
         try {
-            const response = await fetch('/api/chat', {
+            const response = await fetch('../chat_api.php', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    messages: apiHistory
+                    model: 'gpt-4o-mini', // Modelo rápido e eficiente
+                    messages: apiHistory,
+                    temperature: 0.7,
+                    max_tokens: 150
                 })
             });
 
@@ -253,13 +260,14 @@
             removeTyping();
             appendMessage('bot', botReply);
             
+            // Adiciona resposta ao histórico da API
             apiHistory.push({ role: "assistant", content: botReply });
             saveState();
 
-            // Promotional message every 3 interactions
+            // Mensagem promocional a cada 3 interações (3, 6, 9...)
             if (userMessageCount > 0 && userMessageCount % 3 === 0) {
                 setTimeout(() => {
-                    appendMessage('system', 'Want to implement an assistant like this in your company?<br><br>Talk to us at <a href="contact.html" style="color: #991b1b; text-decoration: underline; font-weight: bold;">www.mobizze.com/contact</a>');
+                    appendMessage('system', 'Want to implement an assistant like this in your company?<br><br>Talk to us at <a href="contact.html" style="color: #991b1b; text-decoration: underline; font-weight: bold;">www.mobizze.com/contactos</a>');
                 }, 800);
             }
 
@@ -268,7 +276,7 @@
             removeTyping();
             appendMessage('bot', 'Sorry, a connection error occurred. Please try again later.');
             
-            // Revert failed count
+            // Reverter a contagem de falhas para tentar novamente
             userMessageCount--; 
             apiHistory.pop();
             saveState();
@@ -280,7 +288,7 @@
         }
     }
 
-    // Send events
+    // Eventos de envio
     sendBtn.addEventListener('click', handleSend);
     inputField.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') handleSend();
